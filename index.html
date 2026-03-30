@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33 Tabaco - Sommelier de Tabacos</title>
+    <style>
+        body { font-family: 'Georgia', serif; background-color: #1a1510; color: #e4dccf; margin: 0; line-height: 1.6; scroll-behavior: smooth; }
+        header { background-color: #0d0a08; padding: 25px; text-align: center; border-bottom: 2px solid #d4af37; position: sticky; top: 0; z-index: 1000; }
+        .logo-aguia { width: 140px; height: auto; display: block; margin: 0 auto; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('fumo-capa.jpeg') no-repeat center center/cover; height: 65vh; display: flex; align-items: center; justify-content: center; text-align: center; border-bottom: 3px solid #d4af37; }
+        .hero h1 { color: #d4af37; font-size: clamp(2.5em, 6vw, 4.5em); letter-spacing: 5px; margin: 0; text-shadow: 3px 3px 6px rgba(0,0,0,0.8); }
+        .section { padding: 80px 20px; max-width: 1100px; margin: auto; }
+        h2 { color: #d4af37; border-bottom: 2px solid #d4af37; padding-bottom: 10px; display: inline-block; text-transform: uppercase; letter-spacing: 2px; font-size: 1.8em; }
+        .trato-img { width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 20px 20px 0 #d4af37; margin-top: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; margin-top: 50px; }
+        .card { background: #2c241c; padding: 30px; border-radius: 15px; text-align: center; border: 1px solid #444; transition: 0.4s; }
+        .card:hover { border-color: #d4af37; transform: translateY(-10px); }
+        .card img { width: 100%; height: 280px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; border: 1px solid #555; }
+        .btn { display: inline-block; background: #d4af37; color: #1a1510; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 30px; text-transform: uppercase; transition: 0.3s; font-size: 1.1em; }
+        .btn:hover { background: #fff; box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
+        .parcerias { background: #110d0a; border-radius: 20px; padding: 60px 40px; border: 1px solid #333; margin-top: 40px; text-align: center; }
+        footer { background: #0d0a08; text-align: center; padding: 60px 20px; border-top: 2px solid #d4af37; color: #888; }
+        .whats-link { color: #d4af37; font-size: 1.6em; display: block; margin: 20px 0; font-weight: bold; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo-aguia.jpeg" alt="33 Tabaco" class="logo-aguia" onerror="this.onerror=null; this.src='logo-aguia.png'; this.src='logo-aguia.jpg';">
+</header>
+
+<section class="hero">
+    <h1>33 TABACO</h1>
+</section>
+
+<section id="trato" class="section">
+    <h2>A Assinatura de um Sommelier</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 60px; align-items: center; margin-top: 40px;">
+        <div style="flex: 1; min-width: 320px;">
+            <p style="font-size: 1.3em; font-weight: bold; color: #d4af37; margin-bottom: 15px;">Não vendemos apenas tabaco; entregamos técnica e pureza.</p>
+            <p style="font-size: 1.15em; line-height: 1.9; color: #e4dccf;">
+                Na 33 Tabaco, a produção é tratada como uma ciência sensorial. Cada lote passa por uma curadoria técnica rigorosa, onde controlamos a maturação e a umidade exata para preservar o "suor" natural da corda. 
+            </p>
+            <p style="font-size: 1.15em; line-height: 1.9; color: #e4dccf;">
+                O resultado é um fumo de pureza absoluta, livre de talos e poeira. Uma experiência que respeita o paladar, com suavidade incomparável na garganta e a riqueza de notas que só o trato especializado consegue extrair.
+            </p>
+        </div>
+        <img src="trato-detalhe.jpeg" class="trato-img" alt="Trato técnico" onerror="this.src='trato-detalhe.jpg'">
+    </div>
+</section>
+
+<section class="section" style="text-align: center;">
+    <h2>Produtos Premium</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="foto-saquinho-1.jpeg" alt="Arapiraca" onerror="this.src='foto-saquinho-1.jpg'">
+            <h3>Arapiraca D'Corda</h3>
+            <p>Força e corpo. O sabor da terra com maturação profunda.</p>
+        </div>
+        <div class="card">
+            <img src="foto-saquinho-2.jpeg" alt="Virginia" onerror="this.src='foto-saquinho-2.jpg'">
+            <h3>Golden Virginia</h3>
+            <p>Suavidade absoluta. Notas levemente adocicadas e cor dourada.</p>
+        </div>
+        <div class="card">
+            <img src="foto-saquinho-3.jpeg" alt="Mestre do Fumo" onerror="this.src='foto-saquinho-3.jpg'">
+            <h3>Mestre do Fumo</h3>
+            <p>O blend exclusivo da casa. O equilíbrio perfeito do Sommelier.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section parcerias">
+    <h2>Parcerias e Blends Únicos</h2>
+    <p style="font-size: 1.3em; color: #e4dccf; max-width: 900px; margin: 30px auto;">
+        Fornecemos tabaco para marcas conceituadas no mercado com nossos <strong>blends exclusivos</strong>. Seja mais um parceiro de sucesso com consistência técnica e sabor inconfundível.
+    </p>
+    <img src="foto-fardos.jpeg" style="width: 100%; max-width: 650px; border-radius: 12px; margin: 30px 0; border: 1px solid #d4af37;" alt="Estoque" onerror="this.src='foto-fardos.jpg'">
+    <br>
+    <a href="https://wa.me/5517981085993" target="_blank" class="whats-link">WhatsApp: (17) 98108-5993</a>
+    <a href="https://wa.me/5517981085993" target="_blank" class="btn">Solicitar Orçamento de Blend</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 33 Tabaco - Bebedouro/SP - www.33tabaco.com.br</p>
+    <p style="margin-top: 15px; letter-spacing: 1px;">AUTORIDADE EM TABACO ARTESANAL</p>
+</footer>
+
+</body>
+</html>

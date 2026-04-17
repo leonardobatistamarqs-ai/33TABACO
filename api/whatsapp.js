@@ -42,6 +42,10 @@ export default async function handler(req, res) {
   }
 
   try {
+    const modelsRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${process.env.GEMINI_API_KEY}`);
+    const modelsData = await modelsRes.json();
+    console.log("GEMINI: modelos disponíveis:", JSON.stringify(modelsData));
+
     console.log("GEMINI: chamando API com message:", message);
 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-001:generateContent?key=${process.env.GEMINI_API_KEY}`;

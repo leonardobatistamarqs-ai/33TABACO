@@ -25,8 +25,14 @@ function setNoCache(res) {
 export default async function handler(req, res) {
   setNoCache(res);
 
+  console.log("BODY:", JSON.stringify(req.body));
+
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
+  }
+
+  if (!req.body || Object.keys(req.body).length === 0) {
+    return res.status(200).json({ reply: "teste ok" });
   }
 
   const { message } = req.body;

@@ -54,8 +54,11 @@ export default async function handler(req, res) {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
-        system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
-        contents: [{ role: "user", parts: [{ text: message }] }],
+        contents: [
+          { role: "user", parts: [{ text: SYSTEM_PROMPT }] },
+          { role: "model", parts: [{ text: "Entendido. Vou seguir essas instruções." }] },
+          { role: "user", parts: [{ text: message }] },
+        ],
       }),
     });
 

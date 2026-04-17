@@ -35,11 +35,14 @@
         .blend-info p { font-size: 1.15em; line-height: 1.9; color: #e4dccf; margin-bottom: 15px; }
         .blend-info strong { color: #d4af37; }
 
-        .video-wrapper { margin-top: 50px; }
-        .video-placeholder { background: #110d0a; border: 2px dashed #444; border-radius: 12px; aspect-ratio: 16/9; max-width: 800px; margin: 30px auto 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px; color: #666; text-align: center; padding: 40px; }
-        .video-placeholder .play-icon { font-size: 4em; opacity: 0.4; }
-        .video-placeholder p { font-size: 1em; letter-spacing: 1px; text-transform: uppercase; margin: 0; }
-        .video-placeholder span { font-size: 0.85em; color: #555; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; margin-top: 50px; }
+        .card { background: #2c241c; padding: 30px; border-radius: 15px; text-align: center; border: 1px solid #444; transition: 0.4s; }
+        .card:hover { border-color: #d4af37; transform: translateY(-8px); }
+        .card h3 { color: #d4af37; font-size: 1.3em; letter-spacing: 1px; margin: 0 0 12px; }
+        .card p { color: #c9bfb0; font-size: 0.98em; line-height: 1.7; margin: 0; }
+        .video-card { position: relative; width: 100%; aspect-ratio: 9/16; border-radius: 10px; overflow: hidden; margin-bottom: 20px; border: 1px solid #555; }
+        .video-card iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); align-items: start; } }
 
         .fardos-img { width: 100%; max-width: 600px; border-radius: 10px; border: 1px solid #d4af37; margin-top: 20px; display: block; }
 
@@ -109,13 +112,28 @@
 </section>
 
 <section class="section" style="padding-top: 0;">
-    <div class="video-wrapper">
-        <h2>Veja a Peneira Rotativa em Ação</h2>
-        <p style="color: #c9bfb0; margin-top: 20px; font-size: 1.05em;">Assista ao processo de peneiramento que garante fumo zero pó para o seu produto final.</p>
-        <div class="video-placeholder">
-            <span class="play-icon">▶</span>
-            <p>Vídeo em breve</p>
-            <span>Peneira rotativa — processo de peneiramento do fumo</span>
+    <h2>Veja o Processo em Ação</h2>
+    <div class="grid">
+        <div class="card">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/uvgmKVKVHdU" title="Peneira Rotativa em Ação - 33 Tabaco" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>Peneira Rotativa em Ação</h3>
+            <p>Nosso processo de peneiramento separa 100% das impurezas — sem palha, sem pó, só fumo limpo. É aqui que começa a qualidade do nosso blend.</p>
+        </div>
+        <div class="card">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/RytnicZfusE" title="Fumo Pós Peneira - 33 Tabaco" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>Fumo Desfiado Premium</h3>
+            <p>O resultado fala por si. Fumo desfiado limpo, solto, pronto pra trabalhar. Blends de fumos nobres e tratados, com rendimento e consistência em cada lote.</p>
+        </div>
+        <div class="card">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/4fQZ8qA4eDY" title="Trato Artesanal do Blend - 33 Tabaco" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>Trato Artesanal do Blend</h3>
+            <p>A etapa que define o sabor e a experiência. Cada lote recebe o trato na medida certa — umidade, maturação e o toque exclusivo que diferencia o 33 Tabaco.</p>
         </div>
     </div>
 </section>

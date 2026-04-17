@@ -27,11 +27,9 @@
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; margin-top: 50px; }
         .card { background: #2c241c; padding: 30px; border-radius: 15px; text-align: center; border: 1px solid #444; transition: 0.4s; }
         .card:hover { border-color: #d4af37; transform: translateY(-8px); }
+        .card img { width: 100%; height: 260px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; border: 1px solid #555; }
         .card h3 { color: #d4af37; font-size: 1.3em; letter-spacing: 1px; margin: 0 0 12px; }
         .card p { color: #c9bfb0; font-size: 0.98em; line-height: 1.7; margin: 0; }
-        .video-card { position: relative; width: 100%; aspect-ratio: 9/16; border-radius: 10px; overflow: hidden; margin-bottom: 20px; border: 1px solid #555; }
-        .video-card iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
-        @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); align-items: start; } }
 
         .sobre-blend { background: #110d0a; border-radius: 20px; padding: 60px 40px; border: 1px solid #333; margin-top: 40px; }
         .sobre-blend p { font-size: 1.15em; line-height: 1.9; color: #e4dccf; margin-bottom: 15px; }
@@ -79,25 +77,19 @@
     <h2>Nossa Linha de Palheiros</h2>
     <div class="grid">
         <div class="card">
-            <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/uvgmKVKVHdU" title="Peneira Rotativa em Ação - 33 Tabaco" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h3>Peneira Rotativa em Ação</h3>
-            <p>Nosso processo de peneiramento separa 100% das impurezas — sem palha, sem pó, só fumo limpo. É aqui que começa a qualidade do nosso blend.</p>
+            <img src="foto-saquinho-1.jpeg" alt="Palheiro artesanal Arapiraca D'Corda" onerror="this.src='foto-saquinho-1.jpg'">
+            <h3>Arapiraca D'Corda</h3>
+            <p>Força e corpo. O sabor da terra com maturação profunda. Fumo de corda com trato especial para quem aprecia um palheiro marcante.</p>
         </div>
         <div class="card">
-            <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/RytnicZfusE" title="Fumo Desfiado Premium - 33 Tabaco" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h3>Fumo Desfiado Premium</h3>
-            <p>O resultado fala por si. Fumo desfiado limpo, solto, pronto pra trabalhar. Blends de fumos nobres e tratados, com rendimento e consistência em cada lote.</p>
+            <img src="foto-fardos.jpeg" alt="Estoque de fumo desfiado artesanal - 33 Tabaco" onerror="this.src='foto-fardos.jpg'">
+            <h3>Golden Virginia</h3>
+            <p>Suavidade absoluta. Notas levemente adocicadas e cor dourada. Palheiro leve e aromático, ideal para quem prefere um cigarro mais suave.</p>
         </div>
         <div class="card">
-            <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/4fQZ8qA4eDY" title="Trato Artesanal do Blend - 33 Tabaco" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h3>Trato Artesanal do Blend</h3>
-            <p>A etapa que define o sabor e a experiência. Cada lote recebe o trato na medida certa — umidade, maturação e o toque exclusivo que diferencia o 33 Tabaco.</p>
+            <img src="foto-saquinho-3.jpeg" alt="Blend exclusivo Mestre do Fumo" onerror="this.src='foto-saquinho-3.jpg'">
+            <h3>Mestre do Fumo</h3>
+            <p>O blend exclusivo da casa. Equilíbrio perfeito entre cordas mineiras e goiano. Um cigarro de palha de autor que fideliza o cliente.</p>
         </div>
     </div>
 </section>

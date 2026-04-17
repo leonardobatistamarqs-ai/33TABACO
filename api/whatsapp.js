@@ -42,6 +42,8 @@ export default async function handler(req, res) {
   }
 
   try {
+    console.log("ANTHROPIC: chamando API com message:", message);
+
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
       headers: {
@@ -57,11 +59,19 @@ export default async function handler(req, res) {
       }),
     });
 
+    console.log("ANTHROPIC: status da resposta:", response.status);
+
     const data = await response.json();
+
+    console.log("ANTHROPIC: data recebido:", JSON.stringify(data));
+
     const reply = data.content?.[0]?.text ?? "";
+
+    console.log("REPLY:", reply);
 
     return res.status(200).json({ reply });
   } catch (error) {
+    console.error("ERRO no handler:", error.message, error.stack);
     return res.status(500).json({ error: "Internal server error" });
   }
 }

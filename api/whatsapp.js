@@ -16,7 +16,15 @@ Lead produtor: "🔔 LEAD PRODUTOR: [nome] — [kg/mês]"
 Lead estabelecimento: "🔔 LEAD ESTABELECIMENTO: [nome] — [cidade]"
 Visita: "🔔 VISITA: [estabelecimento] — [endereço] — [contato] — [dia]"`;
 
+function setNoCache(res) {
+  res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+  res.setHeader("Pragma", "no-cache");
+  res.setHeader("Expires", "0");
+}
+
 export default async function handler(req, res) {
+  setNoCache(res);
+
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }

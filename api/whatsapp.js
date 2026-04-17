@@ -42,30 +42,26 @@ export default async function handler(req, res) {
   }
 
   try {
-    console.log("ANTHROPIC: chamando API com message:", message);
+    console.log("GEMINI: chamando API com message:", message);
 
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
+
+    const response = await fetch(url, {
       method: "POST",
-      headers: {
-        "x-api-key": process.env.ANTHROPIC_API_KEY,
-        "anthropic-version": "2023-06-01",
-        "content-type": "application/json",
-      },
+      headers: { "content-type": "application/json" },
       body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 1024,
-        system: SYSTEM_PROMPT,
-        messages: [{ role: "user", content: message }],
+        system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
+        contents: [{ role: "user", parts: [{ text: message }] }],
       }),
     });
 
-    console.log("ANTHROPIC: status da resposta:", response.status);
+    console.log("GEMINI: status da resposta:", response.status);
 
     const data = await response.json();
 
-    console.log("ANTHROPIC: data recebido:", JSON.stringify(data));
+    console.log("GEMINI: data recebido:", JSON.stringify(data));
 
-    const reply = data.content?.[0]?.text ?? "";
+    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
 
     console.log("REPLY:", reply);
 

@@ -4,43 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>33 Tabaco | Palheiro Artesanal e Fumo Desfiado - Bebedouro SP</title>
-    <meta name="description" content="33 Tabaco: palheiro artesanal e fumo desfiado de qualidade superior. Blend exclusivo de cordas mineiras com trato doce e seco. Fornecimento B2B para bares, padarias e estabelecimentos em SP.">
+    <meta name="description" content="33 Tabaco: palheiro artesanal e fumo desfiado de qualidade superior. Blend exclusivo de cordas mineiras. Atendemos produtores e estabelecimentos em Bebedouro SP.">
     <meta name="keywords" content="palheiro artesanal, fumo desfiado, cigarro de palha, palheiro atacado, fumo de corda, blend tabaco, palheiro SP, fumo artesanal bebedouro">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://33tabaco.com.br/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="33 Tabaco | Palheiro Artesanal e Fumo Desfiado">
-    <meta property="og:description" content="Blend exclusivo de cordas mineiras com trato doce e seco. Fumo peneirado, zero pó. Fornecimento para bares e estabelecimentos.">
+    <meta property="og:description" content="Blend exclusivo de cordas mineiras. Atendemos produtores e estabelecimentos com qualidade e técnica.">
     <meta property="og:url" content="https://33tabaco.com.br/">
     <meta property="og:type" content="website">
 
     <style>
+        * { box-sizing: border-box; }
         body { font-family: 'Georgia', serif; background-color: #1a1510; color: #e4dccf; margin: 0; line-height: 1.6; scroll-behavior: smooth; }
         header { background-color: #0d0a08; padding: 25px; text-align: center; border-bottom: 2px solid #d4af37; position: sticky; top: 0; z-index: 1000; }
         .logo-aguia { width: 140px; height: auto; display: block; margin: 0 auto; }
         .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('fumo-capa.jpeg') no-repeat center center/cover; height: 65vh; display: flex; align-items: center; justify-content: center; text-align: center; border-bottom: 3px solid #d4af37; }
         .hero h1 { color: #d4af37; font-size: clamp(2.5em, 6vw, 4.5em); letter-spacing: 5px; margin: 0; text-shadow: 3px 3px 6px rgba(0,0,0,0.8); }
         .hero p { color: #e4dccf; font-size: clamp(1em, 2.5vw, 1.4em); margin-top: 20px; letter-spacing: 2px; }
-        .section { padding: 80px 20px; max-width: 1100px; margin: auto; }
-        h2 { color: #d4af37; border-bottom: 2px solid #d4af37; padding-bottom: 10px; display: inline-block; text-transform: uppercase; letter-spacing: 2px; font-size: 1.8em; }
-        .trato-img { width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 20px 20px 0 #d4af37; margin-top: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; margin-top: 50px; }
-        .card { background: #2c241c; padding: 30px; border-radius: 15px; text-align: center; border: 1px solid #444; transition: 0.4s; }
-        .card:hover { border-color: #d4af37; transform: translateY(-10px); }
-        .card img { width: 100%; height: 280px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; border: 1px solid #555; }
-        .btn { display: inline-block; background: #d4af37; color: #1a1510; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 30px; text-transform: uppercase; transition: 0.3s; font-size: 1.1em; }
-        .btn:hover { background: #fff; box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
-        .parcerias { background: #110d0a; border-radius: 20px; padding: 60px 40px; border: 1px solid #333; margin-top: 40px; text-align: center; }
-        .sobre { background: #110d0a; border-radius: 20px; padding: 60px 40px; border: 1px solid #333; margin-top: 40px; }
-        footer { background: #0d0a08; text-align: center; padding: 60px 20px; border-top: 2px solid #d4af37; color: #888; }
-        .whats-link { color: #d4af37; font-size: 1.6em; display: block; margin: 20px 0; font-weight: bold; text-decoration: none; }
+
+        .audiencias { padding: 80px 20px; max-width: 1100px; margin: auto; text-align: center; }
+        .audiencias h2 { color: #d4af37; font-size: clamp(1.3em, 3vw, 2em); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; }
+        .audiencias p { color: #e4dccf; font-size: 1.1em; max-width: 700px; margin: 0 auto 60px; }
+
+        .cards-audiencia { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .card-audiencia { background: #2c241c; border: 1px solid #444; border-radius: 15px; padding: 50px 35px; text-align: center; text-decoration: none; color: #e4dccf; transition: 0.4s; display: block; }
+        .card-audiencia:hover { border-color: #d4af37; transform: translateY(-10px); box-shadow: 0 15px 40px rgba(212,175,55,0.15); }
+        .card-audiencia .icone { font-size: 3.5em; margin-bottom: 25px; display: block; }
+        .card-audiencia h3 { color: #d4af37; font-size: 1.8em; letter-spacing: 2px; text-transform: uppercase; margin: 0 0 15px; }
+        .card-audiencia p { font-size: 1.05em; line-height: 1.8; color: #c9bfb0; margin: 0 0 30px; }
+        .card-audiencia .btn-card { display: inline-block; background: #d4af37; color: #1a1510; padding: 14px 35px; font-weight: bold; border-radius: 5px; text-transform: uppercase; font-size: 0.95em; letter-spacing: 1px; transition: 0.3s; }
+        .card-audiencia:hover .btn-card { background: #fff; }
+
+        .sobre { background: #110d0a; border-top: 2px solid #2c241c; }
+        .sobre-inner { max-width: 900px; margin: auto; padding: 70px 20px; text-align: center; }
+        .sobre-inner h2 { color: #d4af37; font-size: 1.5em; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px; }
+        .sobre-inner p { font-size: 1.1em; line-height: 1.9; color: #c9bfb0; margin-bottom: 15px; }
+
+        footer { background: #0d0a08; text-align: center; padding: 50px 20px; border-top: 2px solid #d4af37; color: #888; }
+        footer a { color: #d4af37; text-decoration: none; }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="logo-aguia.jpeg" alt="33 Tabaco - Palheiro Artesanal Bebedouro SP" class="logo-aguia" onerror="this.onerror=null; this.src='logo-aguia.png'; this.src='logo-aguia.jpg';">
+    <img src="logo-aguia.jpeg" alt="33 Tabaco - Bebedouro SP" class="logo-aguia" onerror="this.onerror=null; this.src='logo-aguia.png';">
 </header>
 
 <section class="hero">
@@ -50,70 +59,39 @@
     </div>
 </section>
 
-<section id="trato" class="section">
-    <h2>A Assinatura de um Sommelier</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 60px; align-items: center; margin-top: 40px;">
-        <div style="flex: 1; min-width: 320px;">
-            <p style="font-size: 1.3em; font-weight: bold; color: #d4af37; margin-bottom: 15px;">Não vendemos apenas tabaco; entregamos técnica e pureza.</p>
-            <p style="font-size: 1.15em; line-height: 1.9; color: #e4dccf;">
-                Na 33 Tabaco, cada lote de <strong>palheiro artesanal</strong> passa por uma curadoria técnica rigorosa. Controlamos a maturação e a umidade exata para preservar o "suor" natural da corda mineira, garantindo um <strong>fumo desfiado</strong> de qualidade incomparável.
-            </p>
-            <p style="font-size: 1.15em; line-height: 1.9; color: #e4dccf;">
-                Nosso blend exclusivo combina <strong>cordas mineiras com trato doce e seco e goiano</strong>. Fumo peneirado, zero pó, com rendimento médio de 1.200 palheiros por quilo. Uma experiência que respeita o paladar — suavidade na garganta e riqueza de notas que só o trato especializado consegue extrair.
-            </p>
-        </div>
-        <img src="trato-detalhe.jpeg" class="trato-img" alt="Trato artesanal de fumo desfiado para palheiro - 33 Tabaco" onerror="this.src='trato-detalhe.jpg'">
+<section class="audiencias">
+    <h2>Como podemos te atender?</h2>
+    <p>A 33 Tabaco atende dois perfis distintos. Escolha o seu para conhecer os produtos e condições ideais para o seu negócio.</p>
+
+    <div class="cards-audiencia">
+        <a href="produtores.html" class="card-audiencia">
+            <span class="icone">🌿</span>
+            <h3>Produtores</h3>
+            <p>Você produz palheiros ou trabalha com fumo? Fornecemos <strong>fumo desfiado a granel</strong> com blend técnico, peneirado, zero pó. Consistência lote a lote.</p>
+            <span class="btn-card">Ver Fumo a Granel</span>
+        </a>
+
+        <a href="estabelecimentos.html" class="card-audiencia">
+            <span class="icone">🏪</span>
+            <h3>Estabelecimentos</h3>
+            <p>Você tem bar, padaria ou tabacaria? Fornecemos <strong>palheiro pronto</strong> com blends exclusivos para revenda. Entrega direta, sem consignação.</p>
+            <span class="btn-card">Ver Palheiros</span>
+        </a>
     </div>
 </section>
 
-<section class="section" style="text-align: center;">
-    <h2>Palheiros e Fumo Desfiado Premium</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="foto-saquinho-1.jpeg" alt="Palheiro artesanal Arapiraca D'Corda - fumo de corda mineiro" onerror="this.src='foto-saquinho-1.jpg'">
-            <h3>Arapiraca D'Corda</h3>
-            <p>Força e corpo. O sabor da terra com maturação profunda. Fumo de corda com trato especial.</p>
-        </div>
-        <div class="card">
-            <img src="foto-saquinho-2.jpeg" alt="Fumo desfiado Golden Virginia - palheiro suave premium" onerror="this.src='foto-saquinho-2.jpg'">
-            <h3>Golden Virginia</h3>
-            <p>Suavidade absoluta. Notas levemente adocicadas e cor dourada. Palheiro leve e aromático.</p>
-        </div>
-        <div class="card">
-            <img src="foto-saquinho-3.jpeg" alt="Blend exclusivo Mestre do Fumo - palheiro artesanal 33 Tabaco" onerror="this.src='foto-saquinho-3.jpg'">
-            <h3>Mestre do Fumo</h3>
-            <p>O blend exclusivo da casa. O equilíbrio perfeito entre cordas mineiras e goiano. Cigarro de palha de autor.</p>
-        </div>
+<section class="sobre">
+    <div class="sobre-inner">
+        <h2>Sobre a 33 Tabaco</h2>
+        <p>Empresa de Bebedouro/SP com tradição no processamento artesanal de tabaco. Nosso blend combina <strong>cordas mineiras com trato doce e seco e goiano</strong>, com controle rigoroso de umidade e maturação.</p>
+        <p>Fumo peneirado, zero pó. Rendimento médio de 1.200 palheiros por quilo. Uma técnica que respeita o paladar — suavidade na garganta e riqueza de notas que só o trato especializado consegue extrair.</p>
     </div>
-</section>
-
-<section class="section sobre">
-    <h2>O que é Palheiro Artesanal?</h2>
-    <p style="font-size: 1.15em; line-height: 1.9; color: #e4dccf; margin-top: 30px;">
-        O <strong>palheiro artesanal</strong>, também chamado de <strong>cigarro de palha</strong> ou paiol, é uma tradição brasileira com raízes profundas na cultura rural. Diferente do cigarro industrializado, o palheiro é enrolado com fumo natural — sem aditivos químicos — preservando o sabor autêntico do tabaco.
-    </p>
-    <p style="font-size: 1.15em; line-height: 1.9; color: #e4dccf;">
-        Na 33 Tabaco, levamos essa tradição a outro nível: <strong>fumo desfiado peneirado</strong>, blend técnico e trato artesanal com controle de umidade e maturação. O resultado é um palheiro que rende mais, queima melhor e entrega notas que o cigarro industrializado jamais consegue.
-    </p>
-    <p style="font-size: 1.15em; line-height: 1.9; color: #e4dccf;">
-        Atendemos <strong>bares, padarias e pequenos estabelecimentos</strong> em Bebedouro e região com fornecimento direto, sem consignação.
-    </p>
-</section>
-
-<section class="section parcerias">
-    <h2>Fornecimento para Estabelecimentos</h2>
-    <p style="font-size: 1.3em; color: #e4dccf; max-width: 900px; margin: 30px auto;">
-        Fornecemos <strong>palheiro artesanal e fumo desfiado</strong> para bares, padarias e estabelecimentos com <strong>blends exclusivos</strong>. Consistência técnica, sabor inconfundível e entrega direta. Seja mais um parceiro da 33 Tabaco.
-    </p>
-    <img src="foto-fardos.jpeg" style="width: 100%; max-width: 650px; border-radius: 12px; margin: 30px 0; border: 1px solid #d4af37;" alt="Estoque de fumo desfiado artesanal - 33 Tabaco Bebedouro SP" onerror="this.src='foto-fardos.jpg'">
-    <br>
-    <a href="https://wa.me/5517981085993" target="_blank" class="whats-link">WhatsApp: (17) 98108-5993</a>
-    <a href="https://wa.me/5517981085993" target="_blank" class="btn">Solicitar Orçamento</a>
 </section>
 
 <footer>
-    <p>&copy; 2026 33 Tabaco - Bebedouro/SP - www.33tabaco.com.br</p>
-    <p style="margin-top: 15px; letter-spacing: 1px;">PALHEIRO ARTESANAL &amp; FUMO DESFIADO PREMIUM</p>
+    <p>&copy; 2026 33 Tabaco — Bebedouro/SP</p>
+    <p style="margin-top: 10px; letter-spacing: 1px; font-size: 0.9em;">PALHEIRO ARTESANAL &amp; FUMO DESFIADO PREMIUM</p>
+    <p style="margin-top: 15px;"><a href="https://wa.me/5517981085993">WhatsApp: (17) 98108-5993</a></p>
 </footer>
 
 </body>

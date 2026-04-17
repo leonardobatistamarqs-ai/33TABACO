@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33 Tabaco | Palheiro Artesanal para Estabelecimentos - Bebedouro SP</title>
+    <meta name="description" content="Palheiro artesanal pronto para revenda. Fornecimento para bares, padarias e tabacarias em Bebedouro e região. Blends exclusivos, entrega direta, sem consignação.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://33tabaco.com.br/estabelecimentos.html">
+
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background-color: #1a1510; color: #e4dccf; margin: 0; line-height: 1.6; scroll-behavior: smooth; }
+        header { background-color: #0d0a08; padding: 20px 25px; border-bottom: 2px solid #d4af37; position: sticky; top: 0; z-index: 1000; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; }
+        .logo-aguia { width: 100px; height: auto; display: block; }
+        .nav-back { color: #d4af37; text-decoration: none; font-size: 0.95em; letter-spacing: 1px; text-transform: uppercase; transition: 0.3s; }
+        .nav-back:hover { color: #fff; }
+
+        .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('fumo-capa.jpeg') no-repeat center center/cover; height: 55vh; display: flex; align-items: center; justify-content: center; text-align: center; border-bottom: 3px solid #d4af37; padding: 20px; }
+        .hero-tag { display: inline-block; background: #d4af37; color: #1a1510; padding: 6px 18px; font-size: 0.85em; letter-spacing: 3px; text-transform: uppercase; font-weight: bold; margin-bottom: 20px; border-radius: 3px; }
+        .hero h1 { color: #d4af37; font-size: clamp(2em, 5vw, 3.8em); letter-spacing: 4px; margin: 0; text-shadow: 3px 3px 6px rgba(0,0,0,0.8); }
+        .hero p { color: #e4dccf; font-size: clamp(1em, 2.2vw, 1.3em); margin-top: 15px; letter-spacing: 1px; }
+
+        .section { padding: 70px 20px; max-width: 1100px; margin: auto; }
+        h2 { color: #d4af37; border-bottom: 2px solid #d4af37; padding-bottom: 10px; display: inline-block; text-transform: uppercase; letter-spacing: 2px; font-size: 1.7em; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; margin-top: 50px; }
+        .card { background: #2c241c; padding: 30px; border-radius: 15px; text-align: center; border: 1px solid #444; transition: 0.4s; }
+        .card:hover { border-color: #d4af37; transform: translateY(-8px); }
+        .card h3 { color: #d4af37; font-size: 1.3em; letter-spacing: 1px; margin: 0 0 12px; }
+        .card p { color: #c9bfb0; font-size: 0.98em; line-height: 1.7; margin: 0; }
+        .video-card { position: relative; width: 100%; aspect-ratio: 9/16; border-radius: 10px; overflow: hidden; margin-bottom: 20px; border: 1px solid #555; }
+        .video-card iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); align-items: start; } }
+
+        .sobre-blend { background: #110d0a; border-radius: 20px; padding: 60px 40px; border: 1px solid #333; margin-top: 40px; }
+        .sobre-blend p { font-size: 1.15em; line-height: 1.9; color: #e4dccf; margin-bottom: 15px; }
+        .sobre-blend strong { color: #d4af37; }
+
+        .video-wrapper { margin-top: 50px; }
+        .video-placeholder { background: #110d0a; border: 2px dashed #444; border-radius: 12px; aspect-ratio: 16/9; max-width: 800px; margin: 30px auto 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px; color: #666; text-align: center; padding: 40px; }
+        .video-placeholder .play-icon { font-size: 4em; opacity: 0.4; }
+        .video-placeholder p { font-size: 1em; letter-spacing: 1px; text-transform: uppercase; margin: 0; }
+        .video-placeholder span { font-size: 0.85em; color: #555; }
+
+        .condicoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; margin-top: 40px; }
+        .cond-item { background: #2c241c; border: 1px solid #444; border-radius: 10px; padding: 25px 20px; text-align: center; }
+        .cond-item .icone { font-size: 2em; margin-bottom: 12px; display: block; }
+        .cond-item h3 { color: #d4af37; font-size: 1em; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 8px; }
+        .cond-item p { color: #c9bfb0; font-size: 0.93em; line-height: 1.6; margin: 0; }
+
+        .cta-section { background: #110d0a; border-radius: 20px; padding: 60px 40px; border: 1px solid #333; margin-top: 40px; text-align: center; }
+        .cta-section p { font-size: 1.2em; color: #e4dccf; max-width: 700px; margin: 20px auto 35px; line-height: 1.8; }
+        .btn { display: inline-block; background: #d4af37; color: #1a1510; padding: 18px 45px; text-decoration: none; font-weight: bold; border-radius: 5px; text-transform: uppercase; transition: 0.3s; font-size: 1.1em; letter-spacing: 1px; }
+        .btn:hover { background: #fff; box-shadow: 0 0 20px rgba(212,175,55,0.4); }
+        .whats-link { color: #d4af37; font-size: 1.4em; display: block; margin: 20px 0; font-weight: bold; text-decoration: none; }
+        .whats-link:hover { color: #fff; }
+
+        footer { background: #0d0a08; text-align: center; padding: 50px 20px; border-top: 2px solid #d4af37; color: #888; }
+        footer a { color: #d4af37; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo-aguia.jpeg" alt="33 Tabaco" class="logo-aguia" onerror="this.onerror=null; this.src='logo-aguia.png';">
+    <a href="index.html" class="nav-back">← Voltar ao Início</a>
+</header>
+
+<section class="hero">
+    <div>
+        <span class="hero-tag">Para Estabelecimentos</span>
+        <h1>PALHEIRO<br>ARTESANAL</h1>
+        <p>Blends exclusivos prontos para revenda no seu estabelecimento</p>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Nossa Linha de Palheiros</h2>
+    <div class="grid">
+        <div class="card">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/av7_cZtvC6o" title="Peneira Rotativa em Ação - 33 Tabaco" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>Peneira Rotativa em Ação</h3>
+            <p>Nosso processo de peneiramento separa 100% das impurezas — sem palha, sem pó, só fumo limpo. É aqui que começa a qualidade do nosso blend.</p>
+        </div>
+        <div class="card">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/uA3DPPB6Trc" title="Fumo Desfiado Premium - 33 Tabaco" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>Fumo Desfiado Premium</h3>
+            <p>O resultado fala por si. Fumo desfiado limpo, solto, pronto pra trabalhar. Blends de fumos nobres e tratados, com rendimento e consistência em cada lote.</p>
+        </div>
+        <div class="card">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/mYzDLEGV_QA" title="Trato Artesanal do Blend - 33 Tabaco" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>Trato Artesanal do Blend</h3>
+            <p>A etapa que define o sabor e a experiência. Cada lote recebe o trato na medida certa — umidade, maturação e o toque exclusivo que diferencia o 33 Tabaco.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+    <div class="sobre-blend">
+        <h2>Por Que Vender a 33 Tabaco?</h2>
+        <p style="margin-top: 30px;">
+            Nosso <strong>palheiro artesanal</strong> tem uma diferença que o cliente sente na primeira fumada: fumo peneirado, zero pó, com controle rigoroso de umidade e maturação. Rendimento médio de <strong>1.200 palheiros por quilo</strong> — uma experiência que o produto industrializado não entrega.
+        </p>
+        <p>
+            Atendemos <strong>bares, padarias e tabacarias</strong> em Bebedouro e região com fornecimento direto, sem consignação. Produto com identidade, que cria clientela fiel e diferencia o seu estabelecimento.
+        </p>
+    </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+    <h2>Condições de Fornecimento</h2>
+    <div class="condicoes">
+        <div class="cond-item">
+            <span class="icone">🚚</span>
+            <h3>Entrega Direta</h3>
+            <p>Sem intermediários. Produto saindo direto da 33 Tabaco para o seu estabelecimento.</p>
+        </div>
+        <div class="cond-item">
+            <span class="icone">🚫</span>
+            <h3>Sem Consignação</h3>
+            <p>Compra direta, sem complicações. Você controla o seu estoque com segurança.</p>
+        </div>
+        <div class="cond-item">
+            <span class="icone">📦</span>
+            <h3>Pedido Mínimo</h3>
+            <p>Consulte nosso pedido mínimo para a sua região. Atendemos Bebedouro e cidades vizinhas.</p>
+        </div>
+        <div class="cond-item">
+            <span class="icone">🤝</span>
+            <h3>Blends Exclusivos</h3>
+            <p>Três opções de blend com sabor e identidade própria. Produto que fideliza o cliente final.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+    <div class="video-wrapper">
+        <h2>Conheça o Processo de Produção</h2>
+        <p style="color: #c9bfb0; margin-top: 20px; font-size: 1.05em;">Veja como a peneira rotativa garante a qualidade do fumo que chega até o seu cliente.</p>
+        <div class="video-placeholder">
+            <span class="play-icon">▶</span>
+            <p>Vídeo em breve</p>
+            <span>Peneira rotativa — processo de peneiramento do fumo</span>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+    <div class="cta-section">
+        <h2>Seja um Parceiro</h2>
+        <p>Entre em contato para conhecer as condições, blends disponíveis e iniciar o fornecimento para o seu estabelecimento.</p>
+        <a href="https://wa.me/5517981085993" target="_blank" class="whats-link">WhatsApp: (17) 98108-5993</a>
+        <a href="https://wa.me/5517981085993" target="_blank" class="btn">Solicitar Orçamento</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 33 Tabaco — Bebedouro/SP</p>
+    <p style="margin-top: 10px; font-size: 0.9em; letter-spacing: 1px;">PALHEIRO ARTESANAL PARA BARES, PADARIAS E TABACARIAS</p>
+    <p style="margin-top: 15px;"><a href="index.html">← Voltar ao início</a></p>
+</footer>
+
+</body>
+</html>

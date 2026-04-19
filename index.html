@@ -43,11 +43,12 @@
     <style>
         * { box-sizing: border-box; }
         body { font-family: 'Georgia', serif; background-color: #1a1510; color: #e4dccf; margin: 0; line-height: 1.6; scroll-behavior: smooth; }
-        header { background-color: #0d0a08; padding: 20px 25px; border-bottom: 2px solid #d4af37; position: sticky; top: 0; z-index: 1000; display: flex; align-items: center; min-height: 110px; }
-        .nav-blog { color: #d4af37; text-decoration: none; font-size: 0.95em; letter-spacing: 1px; text-transform: uppercase; transition: 0.3s; margin-left: auto; }
+        header { background-color: #0d0a08; padding: 18px 25px; border-bottom: 2px solid #d4af37; position: sticky; top: 0; z-index: 1000; display: flex; align-items: center; justify-content: space-between; }
+        .nav-blog { color: #d4af37; text-decoration: none; font-size: 0.95em; letter-spacing: 1px; text-transform: uppercase; transition: 0.3s; }
         .nav-blog:hover { color: #fff; }
-        .logo-aguia { width: 90px; height: auto; display: block; flex-shrink: 0; }
-        .header-tagline { position: absolute; left: 50%; transform: translateX(-50%); color: #d4af37; font-size: clamp(1.2em, 2.5vw, 1.9em); letter-spacing: 2px; font-style: italic; margin: 0; text-align: center; white-space: nowrap; pointer-events: none; }
+        .logo-aguia { width: 90px; height: auto; display: block; }
+        .tagline { background: #0d0a08; padding: 22px 20px; text-align: center; border-bottom: 1px solid #2c241c; }
+        .tagline p { color: #d4af37; font-size: clamp(1em, 3vw, 1.6em); letter-spacing: 2px; font-style: italic; margin: 0; line-height: 1.5; }
 
         .audiencias { padding: 80px 20px; max-width: 1100px; margin: auto; text-align: center; }
         .audiencias h2 { color: #d4af37; font-size: clamp(1.3em, 3vw, 2em); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; }
@@ -85,9 +86,12 @@
 
 <header>
     <img src="logo-aguia.jpeg" alt="33 Tabaco - Bebedouro SP" class="logo-aguia" onerror="this.onerror=null; this.src='logo-aguia.png';">
-    <p class="header-tagline">Diferente dos iguais. Tradição artesanal, qualidade que o mercado respeita.</p>
     <a href="blog/index.html" class="nav-blog">Blog</a>
 </header>
+
+<div class="tagline">
+    <p>Diferente dos iguais. Tradição artesanal, qualidade que o mercado respeita.</p>
+</div>
 
 <section class="audiencias">
     <h2>Como podemos te atender?</h2>

@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dossiê: Mercado de Fumo de Cachimbo — Brasil & Mundo 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary:    #1a1208;
+      --bg-secondary:  #211a0d;
+      --bg-card:       #2a2010;
+      --bg-card-alt:   #251d0e;
+      --border:        #4a3820;
+      --border-light:  #6b5230;
+      --gold:          #c9a84c;
+      --gold-light:    #e0be72;
+      --gold-dark:     #a07832;
+      --cream:         #f0e8d0;
+      --cream-muted:   #c8b890;
+      --brown-light:   #8b6540;
+      --text-primary:  #e8dcc0;
+      --text-secondary:#b8a880;
+      --text-muted:    #7a6848;
+      --red-soft:      #c0503a;
+      --green-soft:    #5a9060;
+      --blue-soft:     #4a7898;
+      --shadow:        0 4px 24px rgba(0,0,0,0.6);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* ── HEADER ── */
+    .doc-header {
+      background: linear-gradient(160deg, #2e2010 0%, #1a1208 50%, #0e0b05 100%);
+      border-bottom: 3px solid var(--gold-dark);
+      padding: 60px 40px 50px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .doc-header::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .doc-header .eyebrow {
+      font-family: 'Lato', sans-serif;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .doc-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      font-weight: 700;
+      color: var(--cream);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .doc-header h1 span { color: var(--gold); }
+    .doc-header .subtitle {
+      font-size: 16px;
+      color: var(--cream-muted);
+      max-width: 680px;
+      margin: 0 auto 32px;
+    }
+    .doc-meta {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .doc-meta span {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+    }
+    .doc-meta strong { color: var(--gold); }
+    .gold-rule {
+      width: 80px; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 24px auto;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── TABLE OF CONTENTS ── */
+    .toc {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--gold-dark);
+      border-radius: 6px;
+      padding: 32px 36px;
+      margin: 48px auto;
+      max-width: 800px;
+    }
+    .toc h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold);
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    .toc ol {
+      columns: 2;
+      column-gap: 40px;
+      list-style: decimal inside;
+    }
+    .toc li {
+      margin-bottom: 8px;
+      font-size: 13.5px;
+      color: var(--cream-muted);
+      break-inside: avoid;
+    }
+    .toc a { color: var(--cream-muted); text-decoration: none; }
+    .toc a:hover { color: var(--gold-light); }
+
+    /* ── SECTIONS ── */
+    section {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    section:last-of-type { border-bottom: none; }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--cream);
+      margin-bottom: 8px;
+    }
+    h2 .accent { color: var(--gold); }
+    .section-intro {
+      color: var(--text-secondary);
+      max-width: 820px;
+      margin-bottom: 40px;
+      font-size: 15px;
+    }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold-light);
+      font-size: 1.25rem;
+      margin: 32px 0 12px;
+    }
+    h4 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      margin: 24px 0 8px;
+    }
+    p { margin-bottom: 14px; color: var(--text-primary); }
+
+    /* ── STAT CARDS ── */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 32px 0;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--gold-dark);
+      border-radius: 6px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .stat-card .number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .stat-card .sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* ── ALERT BOX ── */
+    .alert {
+      padding: 20px 24px;
+      border-radius: 6px;
+      margin: 24px 0;
+      font-size: 14px;
+    }
+    .alert-warning {
+      background: rgba(192, 80, 58, 0.12);
+      border-left: 4px solid var(--red-soft);
+      color: var(--cream-muted);
+    }
+    .alert-info {
+      background: rgba(74, 120, 152, 0.12);
+      border-left: 4px solid var(--blue-soft);
+      color: var(--cream-muted);
+    }
+    .alert-success {
+      background: rgba(90, 144, 96, 0.12);
+      border-left: 4px solid var(--green-soft);
+      color: var(--cream-muted);
+    }
+    .alert strong { display: block; margin-bottom: 6px; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
+    .alert-warning strong { color: var(--red-soft); }
+    .alert-info strong { color: var(--blue-soft); }
+    .alert-success strong { color: var(--green-soft); }
+
+    /* ── BRAND CARDS ── */
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+      margin: 24px 0;
+    }
+    .brand-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      transition: border-color 0.2s;
+    }
+    .brand-card:hover { border-color: var(--gold-dark); }
+    .brand-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+    .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--cream);
+    }
+    .brand-origin {
+      font-size: 11px;
+      background: rgba(201,168,76,0.15);
+      color: var(--gold);
+      padding: 3px 10px;
+      border-radius: 20px;
+      border: 1px solid rgba(201,168,76,0.25);
+      white-space: nowrap;
+    }
+    .brand-type {
+      font-size: 12px;
+      color: var(--gold-dark);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+    .brand-desc {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+    .brand-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .tag {
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+    .tag-price { border-color: var(--gold-dark); color: var(--gold); background: rgba(201,168,76,0.08); }
+    .price-badge {
+      display: inline-block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--gold);
+      margin-top: 4px;
+    }
+    .badge-discontinued {
+      display: inline-block;
+      font-size: 10px;
+      padding: 2px 8px;
+      background: rgba(192,80,58,0.2);
+      color: var(--red-soft);
+      border: 1px solid var(--red-soft);
+      border-radius: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .badge-crisis {
+      display: inline-block;
+      font-size: 10px;
+      padding: 2px 8px;
+      background: rgba(192,80,58,0.15);
+      color: #e07050;
+      border: 1px solid #804030;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .badge-premium {
+      display: inline-block;
+      font-size: 10px;
+      padding: 2px 8px;
+      background: rgba(201,168,76,0.15);
+      color: var(--gold);
+      border: 1px solid var(--gold-dark);
+      border-radius: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    /* ── COMPARISON TABLE ── */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 24px 0;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+    }
+    thead {
+      background: linear-gradient(90deg, #2e2010, #1e1508);
+    }
+    thead th {
+      padding: 14px 16px;
+      text-align: left;
+      font-family: 'Lato', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      white-space: nowrap;
+      border-bottom: 2px solid var(--gold-dark);
+    }
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+    tbody tr:hover { background: rgba(201,168,76,0.04); }
+    tbody tr:last-child { border-bottom: none; }
+    tbody td {
+      padding: 12px 16px;
+      color: var(--text-primary);
+      vertical-align: middle;
+    }
+    .td-brand { font-family: 'Playfair Display', serif; color: var(--cream); font-size: 14px; }
+    .td-price { color: var(--gold); font-family: 'Playfair Display', serif; font-size: 14px; }
+    .td-rating { color: var(--gold); }
+    .td-muted { color: var(--text-muted); font-size: 12.5px; }
+    .stars { color: var(--gold); font-size: 12px; letter-spacing: -1px; }
+    .dot-red { color: var(--red-soft); }
+    .dot-green { color: var(--green-soft); }
+    .dot-yellow { color: var(--gold); }
+
+    /* ── PROS/CONS ── */
+    .review-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    @media (max-width: 640px) { .review-grid { grid-template-columns: 1fr; } }
+    .review-col {
+      background: var(--bg-card-alt);
+      border-radius: 8px;
+      padding: 20px 24px;
+      border: 1px solid var(--border);
+    }
+    .review-col h4 { margin-top: 0; }
+    .review-col ul { list-style: none; padding: 0; }
+    .review-col li { padding: 6px 0; font-size: 13.5px; color: var(--text-secondary); }
+    .review-col li::before { margin-right: 8px; font-size: 12px; }
+    .pros li::before { content: '✦'; color: var(--green-soft); }
+    .cons li::before { content: '◆'; color: var(--red-soft); }
+
+    /* ── OPPORTUNITY CARDS ── */
+    .opp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .opp-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px;
+    }
+    .opp-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    .opp-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+    }
+    .opp-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .opp-card.highlight {
+      border-color: var(--gold-dark);
+      background: linear-gradient(135deg, rgba(201,168,76,0.06), var(--bg-card));
+    }
+
+    /* ── CATEGORY PILLS ── */
+    .category-section { margin: 24px 0; }
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      background: var(--bg-card);
+      border-radius: 8px 8px 0 0;
+      border: 1px solid var(--border);
+      border-bottom: none;
+    }
+    .category-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--cream);
+    }
+    .category-body {
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--gold-dark);
+      border-radius: 0 0 8px 8px;
+      padding: 20px;
+      background: var(--bg-card-alt);
+    }
+    .category-body p { font-size: 14px; margin-bottom: 10px; }
+
+    /* ── TIMELINE ── */
+    .timeline { margin: 24px 0; }
+    .tl-item {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .tl-year {
+      min-width: 60px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--gold);
+      padding-top: 2px;
+    }
+    .tl-content {
+      border-left: 2px solid var(--border);
+      padding: 0 0 16px 20px;
+      flex: 1;
+    }
+    .tl-content h4 { margin-top: 0; margin-bottom: 6px; }
+    .tl-content p { font-size: 13.5px; color: var(--text-secondary); margin-bottom: 0; }
+
+    /* ── REGULATION TABLE ── */
+    .reg-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .reg-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 18px 20px;
+    }
+    .reg-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px; }
+    .reg-value { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--gold); }
+    .reg-note { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+
+    /* ── CONCLUSION ── */
+    .conclusion-block {
+      background: linear-gradient(135deg, rgba(201,168,76,0.07), var(--bg-card));
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--gold-dark);
+      border-radius: 8px;
+      padding: 32px 36px;
+      margin: 24px 0;
+    }
+    .conclusion-block h3 { margin-top: 0; }
+
+    /* ── SOURCES ── */
+    .sources-list {
+      list-style: none;
+      padding: 0;
+      columns: 2;
+      column-gap: 32px;
+    }
+    .sources-list li { margin-bottom: 8px; break-inside: avoid; }
+    .sources-list a { color: var(--text-muted); font-size: 12.5px; text-decoration: none; word-break: break-all; }
+    .sources-list a:hover { color: var(--gold); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      padding: 32px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+    footer p { margin-bottom: 4px; }
+
+    /* ── DIVIDER ── */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 48px 0 40px;
+    }
+    .section-divider::before,
+    .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+    .section-divider span {
+      color: var(--gold-dark);
+      font-size: 18px;
+    }
+
+    @media (max-width: 700px) {
+      .doc-header { padding: 40px 20px; }
+      .toc ol { columns: 1; }
+      .container { padding: 0 16px; }
+      .sources-list { columns: 1; }
+      section { padding: 40px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════════════════ -->
+<header class="doc-header">
+  <div class="eyebrow">Inteligência de Mercado • Tabaco Artesanal</div>
+  <h1>Mercado de <span>Fumo de Cachimbo</span><br>Brasil & Mundo</h1>
+  <div class="gold-rule"></div>
+  <p class="subtitle">
+    Dossiê executivo sobre marcas, preços, tendências, diferenciais competitivos e oportunidades
+    para produtores artesanais nacionais — com foco no cenário 2024–2025.
+  </p>
+  <div class="doc-meta">
+    <span>Data de Compilação: <strong>Maio de 2026</strong></span>
+    <span>Fontes: <strong>TobaccoReviews, SmokingPipes, STG, Anvisa, tabacarias BR</strong></span>
+    <span>Classificação: <strong>Uso Comercial</strong></span>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Índice</h3>
+    <ol>
+      <li><a href="#mercado-global">Panorama do Mercado Global</a></li>
+      <li><a href="#evento-stg">Evento Crítico: Crise STG/Mac Baren</a></li>
+      <li><a href="#marcas">Marcas Líderes — Análise por Categoria</a></li>
+      <li><a href="#precos">Tabela Comparativa de Preços no Brasil</a></li>
+      <li><a href="#elogios">Elogios e Críticas por Categoria</a></li>
+      <li><a href="#diferenciais">Diferenciais Competitivos e Tendências</a></li>
+      <li><a href="#contexto-br">Contexto Regulatório Brasileiro</a></li>
+      <li><a href="#consumidor">Perfil do Consumidor</a></li>
+      <li><a href="#oportunidades">Oportunidades para Produtor Nacional</a></li>
+      <li><a href="#conclusao">Conclusão e Recomendações Estratégicas</a></li>
+    </ol>
+  </div>
+
+  <!-- ══════════════════════════════════
+       1. PANORAMA DO MERCADO GLOBAL
+  ══════════════════════════════════ -->
+  <section id="mercado-global">
+    <div class="section-label">Seção 01</div>
+    <h2>Panorama do <span class="accent">Mercado Global</span></h2>
+    <p class="section-intro">
+      O fumo de cachimbo ocupa um nicho específico dentro da indústria do tabaco — muito menor que o cigarro,
+      porém com crescimento consistente, público fidelizado e disposição comprovada para pagar preços premium.
+    </p>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="number">$3,5B</div>
+        <div class="label">Valor de mercado 2024</div>
+        <div class="sub">USD — estimativa global</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">$5,2B</div>
+        <div class="label">Projeção para 2033</div>
+        <div class="sub">CAGR de 4,8% ao ano</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">+60%</div>
+        <div class="label">Vendas premium via e-comm</div>
+        <div class="sub">E-commerce domina canal</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">25–40</div>
+        <div class="label">Faixa etária em crescimento</div>
+        <div class="sub">Millennials / consumo ritual</div>
+      </div>
+    </div>
+
+    <h3>Características-Chave do Segmento</h3>
+    <p>Ao contrário do cigarro — consumido principalmente pela nicotina e conveniência — o cachimbo atrai
+      consumidores em busca de uma <strong>experiência contemplativa e artesanal</strong>. A evolução do
+      mercado global tem sido marcada pela migração de blends massivos e padronizados para
+      <strong>ofertas premium e artesanais</strong>, com crescente valorização de ingredientes naturais,
+      origens específicas de folha e embalagens colecionáveis.</p>
+
+    <p>O canal digital concentra mais de <strong>60% das vendas premium</strong>, o que significa que
+      um produtor nacional com site estruturado e presença em tabacarias online pode competir
+      em pé de igualdade com marcas importadas.</p>
+
+    <div class="alert alert-info">
+      <strong>Contexto: Consolidação da Indústria</strong>
+      O Scandinavian Tobacco Group (STG) é hoje o maior conglomerado de tabaco para cachimbo do mundo,
+      controlando Mac Baren, Sutliff, Rattray's, Escudo, Borkum Riff e outras dezenas de marcas.
+      Essa concentração criou vulnerabilidades que abrem espaço para novos competidores.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       2. EVENTO CRÍTICO: STG / MAC BAREN
+  ══════════════════════════════════ -->
+  <section id="evento-stg">
+    <div class="section-label">Seção 02 — Alerta de Mercado</div>
+    <h2><span class="accent">Evento Crítico:</span> Crise STG / Mac Baren</h2>
+    <p class="section-intro">
+      O maior evento do mercado de fumo de cachimbo em décadas aconteceu entre 2024 e 2025 e
+      criou o maior vácuo de mercado em anos — uma janela de oportunidade para produtores independentes.
+    </p>
+
+    <div class="alert alert-warning">
+      <strong>Atenção: Impacto Direto no Mercado 2025</strong>
+      A STG adquiriu a Mac Baren Tobacco Company no verão de 2024 e anunciou o fechamento de ambas as
+      fábricas — Sutliff (Virginia, EUA) em 28 de fevereiro de 2025, e Mac Baren (Svendborg, Dinamarca)
+      até o início de 2027. Apenas 14 SKUs de um catálogo inteiro continuarão sendo produzidos.
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">2018</div>
+        <div class="tl-content">
+          <h4>McClelland fecha as portas</h4>
+          <p>A lendária fabricante americana de blends Virginia fecha após 40 anos. Razões: dificuldades
+          em obter folhas Virginia de qualidade e pressão regulatória da FDA. Vácuo de mercado nunca
+          totalmente preenchido.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2022</div>
+        <div class="tl-content">
+          <h4>Dunhill cede receitas à Peterson</h4>
+          <p>A Dunhill anuncia encerramento da linha de fumos para cachimbo. A irlandesa Peterson
+          adquire as receitas clássicas (Nightcap, Elizabethan Mixture, Early Morning Pipe) e
+          relança com novo rótulo — mesma formulação, nova embalagem.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2024</div>
+        <div class="tl-content">
+          <h4>STG adquire Mac Baren Tobacco Company</h4>
+          <p>A STG absorve Mac Baren e sua subsidiária Sutliff. Anúncio posterior confirma fechamento
+          de ambas as fábricas. A Scandinavian Tobacco Group passa a centralizar toda a produção
+          em sua fábrica em Assens, Dinamarca.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2025</div>
+        <div class="tl-content">
+          <h4>Fechamento da Sutliff (fev/2025) e início do fim da Mac Baren</h4>
+          <p>Sutliff encerra produção em 28 de fevereiro de 2025. Das centenas de SKUs Mac Baren/Sutliff,
+          apenas <strong>14 continuarão</strong>. Comunidade manifesta preocupação com qualidade
+          após centralização industrial. Fumantes e colecionadores fazem estoque emergencial.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-success">
+      <strong>Oportunidade Direta para Produtores Artesanais</strong>
+      A descontinuação de centenas de blends Mac Baren/Sutliff cria demanda reprimida imediata.
+      Consumidores fidelizados a esses produtos estão ativamente buscando substitutos de qualidade equivalente.
+      Produtores que consigam replicar perfis similares (blends aromáticos, Virginia puro, Burley) podem
+      capturar esse público específico com comunicação direcionada.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       3. MARCAS LÍDERES
+  ══════════════════════════════════ -->
+  <section id="marcas">
+    <div class="section-label">Seção 03</div>
+    <h2>Marcas Líderes — <span class="accent">Análise por Categoria</span></h2>
+    <p class="section-intro">
+      O mercado se divide em quatro grandes segmentos: aromáticos (entrada e popular),
+      premium importado (Virginia, English, Flake), artesanal boutique e nacional.
+    </p>
+
+    <h3>Categoria 1 — Aromáticos Populares (Entrada de Mercado)</h3>
+    <div class="brand-grid">
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Captain Black</div>
+          <div class="brand-origin">🇺🇸 EUA</div>
+        </div>
+        <div class="brand-type">Aromático • Virginia + Burley + Cavendish</div>
+        <div class="brand-desc">
+          Lançado em 1956, é o tabaco para cachimbo mais vendido dos EUA e um dos mais populares do mundo.
+          Blend de Virginia dourado, Burley e Black Cavendish com toque de baunilha. Ícone de nostalgia,
+          referência absoluta para iniciantes.
+        </div>
+        <div class="brand-meta">
+          <span class="tag tag-price">R$ 37–42 / 42,5g</span>
+          <span class="tag">Initiante-friendly</span>
+          <span class="tag">Alta disponibilidade BR</span>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Borkum Riff</div>
+          <div class="brand-origin">🇸🇪 Suécia/STG</div>
+        </div>
+        <div class="brand-type">Aromático • Múltiplas variações</div>
+        <div class="brand-desc">
+          Parte importante da "revolução dinamarquesa" nos EUA. Linha variada com Bourbon Whiskey,
+          Cherry Liqueur, Black Cavendish. Original com notas de chocolate, ameixa e frutas.
+          Preço acessível, amplamente disponível.
+        </div>
+        <div class="brand-meta">
+          <span class="tag tag-price">USD 7–10 / 42g (EUA)</span>
+          <span class="tag">Bom custo-benefício</span>
+          <span class="tag">Grupo STG</span>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Amphora</div>
+          <div class="brand-origin">🇳🇱 Holanda</div>
+        </div>
+        <div class="brand-type">Aromático • Blend holandês</div>
+        <div class="brand-desc">
+          Marca holandesa tradicional, popular em mercados europeus e brasileiro. Oferece variedades
+          aromáticas suaves a médias. Distribuída no Brasil por importadores especializados.
+          Boa saída em tabacarias físicas.
+        </div>
+        <div class="brand-meta">
+          <span class="tag">Popular na Europa</span>
+          <span class="tag">Suave e acessível</span>
+        </div>
+      </div>
+    </div>
+
+    <h3>Categoria 2 — Premium Importado (Faixa Intermediária a Alta)</h3>
+    <div class="brand-grid">
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Mac Baren <span class="badge-crisis">Em transição</span></div>
+          <div class="brand-origin">🇩🇰 Dinamarca/STG</div>
+        </div>
+        <div class="brand-type">Virginia • Aromático • Blends variados</div>
+        <div class="brand-desc">
+          Uma das marcas mais respeitadas por décadas. Best sellers: <em>Golden Extra</em> (Virginia + Cavendish),
+          <em>Vanilla Cream</em>, <em>HH Bold Kentucky</em> (forte Burley/Latakia) e <em>Pure Virginia</em>.
+          Com a aquisição pela STG em 2024 e fechamento das fábricas, apenas 14 SKUs continuarão.
+          Consumidores preocupados com alteração de qualidade.
+        </div>
+        <div class="brand-meta">
+          <span class="tag tag-price">R$ 150–170 / 50g</span>
+          <span class="tag">Fábrica fechando 2027</span>
+          <span class="tag">14 SKUs sobrevivem</span>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Peterson</div>
+          <div class="brand-origin">🇮🇪 Irlanda</div>
+        </div>
+        <div class="brand-type">English • Virginia • Herdeiro Dunhill</div>
+        <div class="brand-desc">
+          A irlandesa Peterson adquiriu as lendárias receitas Dunhill — <em>Nightcap</em> (heavy English/Latakia),
+          <em>Elizabethan Mixture</em>, <em>Early Morning Pipe</em>. Mesmas receitas e fábrica, nova embalagem.
+          Considerada premium no Brasil. Muito bem avaliada em fóruns especializados.
+        </div>
+        <div class="brand-meta">
+          <span class="tag tag-price">R$ 230–260 / 50g</span>
+          <span class="tag">Receitas Dunhill originais</span>
+          <span class="tag badge-premium">Premium</span>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Samuel Gawith</div>
+          <div class="brand-origin">🇬🇧 Reino Unido</div>
+        </div>
+        <div class="brand-type">Flakes • Virginia • Traditional British</div>
+        <div class="brand-desc">
+          Fabricante britânica de longa tradição, especializada em flakes (lâminas prensadas) e ropes.
+          Best sellers: <em>Flake</em>, <em>1792 Flake</em>, <em>Full Virginia Flake</em>.
+          Estilo de preparo mais exigente (quebrar o flake), mas altamente apreciado por connoisseurs.
+          Histórico de episódios de mofo em lotes.
+        </div>
+        <div class="brand-meta">
+          <span class="tag">Estilo exige preparo</span>
+          <span class="tag">Altamente valorizado</span>
+          <span class="tag">Importado raro no BR</span>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Escudo Navy De Luxe</div>
+          <div class="brand-origin">🇨🇱 Chile/STG</div>
+        </div>
+        <div class="brand-type">Virginia + Perique • Navy Cut</div>
+        <div class="brand-desc">
+          Considerado por muitos como <em>"o melhor VaPer disponível"</em> — benchmark do segmento
+          Virginia/Perique. Notas doces, picantes, frutadas (ameixa). Corte navy, maturação pronunciada.
+          Avaliação média muito alta em tobaccoreviews.com. Colecionável e muito disputado.
+        </div>
+        <div class="brand-meta">
+          <span class="tag">Rei dos VaPers</span>
+          <span class="tag">Escassez relativa</span>
+          <span class="tag badge-premium">Cult</span>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Rattray's</div>
+          <div class="brand-origin">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escócia/STG</div>
+        </div>
+        <div class="brand-type">English • Aromáticos • Blends variados</div>
+        <div class="brand-desc">
+          Heritage escocês com blends como <em>Red Rapparee</em> (English clássico) e
+          <em>Black Mallory</em>. Reputação sólida, produção atual pela STG.
+          Linha variada cobre desde aromáticos suaves até English robustos.
+        </div>
+        <div class="brand-meta">
+          <span class="tag">Grupo STG</span>
+          <span class="tag">Heritage escocês</span>
+        </div>
+      </div>
+    </div>
+
+    <h3>Categoria 3 — Artesanal / Boutique (Topo de Mercado)</h3>
+    <div class="brand-grid">
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Cornell &amp; Diehl <span class="badge-premium">Artesanal</span></div>
+          <div class="brand-origin">🇺🇸 EUA (Carolina do Norte)</div>
+        </div>
+        <div class="brand-type">Small Batch • Todos os estilos • 150+ blends</div>
+        <div class="brand-desc">
+          Referência máxima de fumo artesanal americano. Head blender Jeremy Reeves comanda 150+ blends,
+          todos feitos à mão em pequenos lotes. Produz também toda a linha G.L. Pease.
+          Lançamentos <em>Small Batch</em> criam expectativa e corrida por compra entre colecionadores.
+          Críticas: pode chegar mais seco na lata, episódios de mofo em 2016.
+        </div>
+        <div class="brand-meta">
+          <span class="tag">150+ blends</span>
+          <span class="tag">Small Batch exclusivo</span>
+          <span class="tag">Referência global</span>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">G.L. Pease <span class="badge-premium">Premium</span></div>
+          <div class="brand-origin">🇺🇸 EUA</div>
+        </div>
+        <div class="brand-type">English • Virginia • Blends Premium</div>
+        <div class="brand-desc">
+          Criada pelo blendmaster Gregory L. Pease, produzida pela C&amp;D.
+          Linha refinada com <em>Union Square</em>, <em>Meridian</em>, <em>Odyssey</em> e outros blends
+          muito aclamados em fóruns. Posicionamento de alto preço justificado pela qualidade consistente
+          e curadoria rigorosa das folhas.
+        </div>
+        <div class="brand-meta">
+          <span class="tag">Altíssima avaliação</span>
+          <span class="tag">Produzido por C&amp;D</span>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Hearth &amp; Home</div>
+          <div class="brand-origin">🇺🇸 EUA</div>
+        </div>
+        <div class="brand-type">Boutique • Blends variados</div>
+        <div class="brand-desc">
+          WhiteKnight foi eleito o <strong>#1 tabaco para cachimbo de 2024</strong> por leitores de
+          tobaccoreviews.com, sendo comparado ao lendário Balkan Sobranie original.
+          Marca boutique com curadoria rigorosa e blends altamente conceituados.
+        </div>
+        <div class="brand-meta">
+          <span class="tag">#1 de 2024</span>
+          <span class="tag">WhiteKnight cult</span>
+        </div>
+      </div>
+
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Esoterica</div>
+          <div class="brand-origin">🇺🇸 EUA</div>
+        </div>
+        <div class="brand-type">Boutique • Produção limitadíssima</div>
+        <div class="brand-desc">
+          Uma das mais buscadas e difíceis de obter. Produção extremamente limitada cria escassez real.
+          Altíssimas avaliações em tobaccoreviews.com.
+          Consumidores monitoram constantemente disponibilidade nas lojas online.
+        </div>
+        <div class="brand-meta">
+          <span class="tag">Altíssima procura</span>
+          <span class="tag">Escassez real</span>
+        </div>
+      </div>
+    </div>
+
+    <h3>Categoria 4 — Marcas Nacionais Brasileiras</h3>
+    <div class="brand-grid">
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Irlandez</div>
+          <div class="brand-origin">🇧🇷 Brasil</div>
+        </div>
+        <div class="brand-type">Aromático • Blends variados</div>
+        <div class="brand-desc">
+          Uma das marcas nacionais mais conhecidas e distribuídas no Brasil.
+          Longa tradição na produção de fumos para cachimbo, com ampla variedade de blends
+          combinando tabacos nacionais e importados. Boa presença em tabacarias físicas e online.
+        </div>
+        <div class="brand-meta">
+          <span class="tag">Alta distribuição BR</span>
+          <span class="tag">Tradição local</span>
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Cândido Giovanella</div>
+          <div class="brand-origin">🇧🇷 Brasil</div>
+        </div>
+        <div class="brand-type">Premium Nacional • Tabacos envelhecidos</div>
+        <div class="brand-desc">
+          Posicionamento de sofisticação. Blends com tabacos envelhecidos para aprimorar sabor e aroma.
+          Considerada a marca nacional mais próxima do segmento premium. Boa apresentação de embalagem.
+        </div>
+        <div class="brand-meta">
+          <span class="tag">Posição premium local</span>
+          <span class="tag">Folha envelhecida</span>
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-header">
+          <div class="brand-name">Finamore / D'ora / Montenegro</div>
+          <div class="brand-origin">🇧🇷 Brasil</div>
+        </div>
+        <div class="brand-type">Aromático Nacional</div>
+        <div class="brand-desc">
+          Marcas populares no mercado nacional com preços acessíveis. Distribuição via tabacarias
+          e atacadistas. Público-alvo: fumantes de cachimbo estabelecidos que buscam custo-benefício
+          sem depender de produtos importados.
+        </div>
+        <div class="brand-meta">
+          <span class="tag">Preço acessível</span>
+          <span class="tag">Público fidelizado</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-warning">
+      <strong>Marca Descontinuada — McClelland (EUA, 1978–2018)</strong>
+      A McClelland Tobacco Company, considerada a maior especialista em Virginia tobaccos do mundo,
+      encerrou as operações em 2018 após 40 anos. Motivos: dificuldade em obter folhas Virginia de
+      alta qualidade e pressão regulatória da FDA. Seu fechamento deixou um vácuo no segmento
+      Virginia puro que <em>ainda não foi completamente preenchido</em> em 2025. Lotes antigos
+      são vendidos a preços especulativos por colecionadores.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       4. TABELA DE PREÇOS BRASIL
+  ══════════════════════════════════ -->
+  <section id="precos">
+    <div class="section-label">Seção 04</div>
+    <h2>Tabela Comparativa de <span class="accent">Preços no Brasil</span></h2>
+    <p class="section-intro">
+      Preços coletados em tabacarias online brasileiras (Tabacaria Shop, Charutos &amp; Tabacos,
+      PipeSmoking360, Tabacaria da Mata). Valores em Reais — referência maio/2025.
+      Preços PIX/à vista quando disponíveis.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Marca / Blend</th>
+            <th>Origem</th>
+            <th>Gramatura</th>
+            <th>Preço BR (R$)</th>
+            <th>R$/grama</th>
+            <th>Categoria</th>
+            <th>Disponibilidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-brand">Captain Black (Original/White)</td>
+            <td class="td-muted">EUA</td>
+            <td>42,5g pouch</td>
+            <td class="td-price">R$ 37–42</td>
+            <td class="td-muted">~R$ 0,90/g</td>
+            <td><span class="tag">Aromático</span></td>
+            <td class="dot-green">● Alta</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Marcas nacionais (All Day, Cocktail)</td>
+            <td class="td-muted">Brasil</td>
+            <td>50g lata</td>
+            <td class="td-price">R$ 60–80</td>
+            <td class="td-muted">~R$ 1,30/g</td>
+            <td><span class="tag">Aromático</span></td>
+            <td class="dot-green">● Alta</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Mac Baren 7 Seas Regular/Gold</td>
+            <td class="td-muted">Dinamarca</td>
+            <td>42,5g pouch</td>
+            <td class="td-price">R$ 90–110</td>
+            <td class="td-muted">~R$ 2,20/g</td>
+            <td><span class="tag">Aromático mid</span></td>
+            <td class="dot-yellow">● Média</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Mac Baren Pure Virginia</td>
+            <td class="td-muted">Dinamarca</td>
+            <td>50g</td>
+            <td class="td-price">R$ 150–170</td>
+            <td class="td-muted">~R$ 3,20/g</td>
+            <td><span class="tag">Virginia</span></td>
+            <td class="dot-yellow">● Média</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Doctor Pipe London Dock</td>
+            <td class="td-muted">Inglaterra</td>
+            <td>100g</td>
+            <td class="td-price">R$ 178–198</td>
+            <td class="td-muted">~R$ 1,80/g</td>
+            <td><span class="tag">English</span></td>
+            <td class="dot-yellow">● Média</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Peterson Early Morning Pipe</td>
+            <td class="td-muted">Irlanda</td>
+            <td>50g lata</td>
+            <td class="td-price">R$ 230–260</td>
+            <td class="td-muted">~R$ 4,80/g</td>
+            <td><span class="tag">English/Virginia</span></td>
+            <td class="dot-yellow">● Média-baixa</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Peterson Nightcap (ex-Dunhill)</td>
+            <td class="td-muted">Irlanda</td>
+            <td>50g lata</td>
+            <td class="td-price">R$ 250–290</td>
+            <td class="td-muted">~R$ 5,40/g</td>
+            <td><span class="tag">English Latakia</span></td>
+            <td class="dot-red">● Baixa</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Cornell &amp; Diehl (blends variados)</td>
+            <td class="td-muted">EUA</td>
+            <td>57g (2oz)</td>
+            <td class="td-price">R$ 160–220</td>
+            <td class="td-muted">~R$ 3,30/g</td>
+            <td><span class="tag">Artesanal</span></td>
+            <td class="dot-red">● Baixa (importação)</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Escudo Navy De Luxe</td>
+            <td class="td-muted">Chile/STG</td>
+            <td>50g lata</td>
+            <td class="td-price">R$ 180–220</td>
+            <td class="td-muted">~R$ 4,00/g</td>
+            <td><span class="tag">VaPer</span></td>
+            <td class="dot-red">● Raro no BR</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Samuel Gawith / Gawith Hoggarth</td>
+            <td class="td-muted">Reino Unido</td>
+            <td>50g</td>
+            <td class="td-price">R$ 200–280</td>
+            <td class="td-muted">~R$ 4,60/g</td>
+            <td><span class="tag">Flake British</span></td>
+            <td class="dot-red">● Raro no BR</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Comparativo Internacional vs. Brasil</h3>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="number">2–3×</div>
+        <div class="label">Multiplicador médio</div>
+        <div class="sub">Preço BR vs. preço EUA/Europa antes de impostos</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">~70%</div>
+        <div class="label">Carga tributária total</div>
+        <div class="sub">IPI + PIS/COFINS + ICMS + II somados</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">€17–22</div>
+        <div class="label">Mac Baren 50g na Europa</div>
+        <div class="sub">~R$ 100–120 sem impostos/frete</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">USD 20</div>
+        <div class="label">Mac Baren 100g nos EUA</div>
+        <div class="sub">~R$ 110 bruto → R$150+ no BR</div>
+      </div>
+    </div>
+
+    <p>A carga tributária brasileira sobre produtos fumígenos é uma das mais altas do mundo, o que
+    <strong>encarece substancialmente os importados</strong> e cria vantagem de custo natural para
+    produtos nacionais. Um produto artesanal nacional bem posicionado pode praticar preços de
+    R$ 90–150 por 50g (faixa <em>premium nacional</em>) com margens saudáveis e ainda ser
+    percebido como acessível frente a importados equivalentes.</p>
+  </section>
+
+  <!-- ══════════════════════════════════
+       5. ELOGIOS E CRÍTICAS
+  ══════════════════════════════════ -->
+  <section id="elogios">
+    <div class="section-label">Seção 05</div>
+    <h2>Elogios e Críticas <span class="accent">por Categoria</span></h2>
+    <p class="section-intro">
+      Baseado em avaliações de tobaccoreviews.com, pipesmokersden.com, brothersofbriar.com,
+      badgerandblade.com, pipesmagazine.com e fóruns especializados. Dados de 2022–2025.
+    </p>
+
+    <div class="category-section">
+      <div class="category-header">
+        <div class="category-name">Aromáticos Populares (Captain Black, Borkum Riff, Amphora)</div>
+        <span class="tag">Segmento de entrada</span>
+      </div>
+      <div class="category-body">
+        <div class="review-grid">
+          <div class="review-col pros">
+            <h4 style="color: var(--green-soft);">Elogios</h4>
+            <ul>
+              <li>Acessibilidade e ampla disponibilidade</li>
+              <li>Sabor suave, "room note" agradável (quem está por perto aprova)</li>
+              <li>Ideal para iniciantes — sem curva de aprendizado</li>
+              <li>Nostalgia e evocação afetiva (especialmente Captain Black)</li>
+              <li>Consistência entre lotes</li>
+              <li>Preço baixo permite experimentação</li>
+            </ul>
+          </div>
+          <div class="review-col cons">
+            <h4 style="color: var(--red-soft);">Críticas</h4>
+            <ul>
+              <li>Considerados "básicos" por fumantes experientes</li>
+              <li>Excesso de umidade — pode dificultar acender</li>
+              <li>Muitos aditivos e aromatizantes artificiais</li>
+              <li>Pouco complexidade de sabor a longo prazo</li>
+              <li>Borkum Riff: "mais seco que a maioria"</li>
+              <li>Não envelhecem bem em lata (ao contrário dos Virginia puros)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <div class="category-header">
+        <div class="category-name">English Blends / Latakia (Peterson Nightcap, Rattray's, GL Pease)</div>
+        <span class="tag">Segmento connoisseur</span>
+      </div>
+      <div class="category-body">
+        <div class="review-grid">
+          <div class="review-col pros">
+            <h4 style="color: var(--green-soft);">Elogios</h4>
+            <ul>
+              <li>Complexidade de sabor incomparável (defumado, especiarias, couro)</li>
+              <li>Altíssima satisfação entre fumantes experientes</li>
+              <li>Peterson Nightcap: "referência em English pesado com Latakia"</li>
+              <li>Combinação de notas terrosas e aromáticas únicas</li>
+              <li>Envelhecem excelentemente em lata (melhora com anos)</li>
+              <li>GL Pease Union Square: avaliações sistematicamente 4,5/5</li>
+            </ul>
+          </div>
+          <div class="review-col cons">
+            <h4 style="color: var(--red-soft);">Críticas</h4>
+            <ul>
+              <li>Latakia forte não agrada iniciantes ou acompanhantes</li>
+              <li>"Room note" muito intensa — não aceita em ambientes sociais</li>
+              <li>Preço elevado no Brasil (R$ 230–290/50g)</li>
+              <li>Dunhill original era melhor — qualidade percebida decaiu antes da Peterson</li>
+              <li>Alguns Peterson Nightcap criticados por "muito suave vs. original Dunhill"</li>
+              <li>Latakia sírio original difícil de obter — qualidade varia</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <div class="category-header">
+        <div class="category-name">Virginia / Perique (Escudo, Samuel Gawith Flake, Cornell &amp; Diehl VaPers)</div>
+        <span class="tag">Segmento premium avançado</span>
+      </div>
+      <div class="category-body">
+        <div class="review-grid">
+          <div class="review-col pros">
+            <h4 style="color: var(--green-soft);">Elogios</h4>
+            <ul>
+              <li>Escudo: "melhor VaPer disponível" — benchmark absoluto do segmento</li>
+              <li>Notas naturais de frutas, especiarias e mel sem aromatizantes</li>
+              <li>Envelhecem extraordinariamente bem em lata</li>
+              <li>Experiência de degustação profunda, evolução ao longo do fumado</li>
+              <li>Samuel Gawith Flake: autenticidade britânica inigualável</li>
+              <li>Corte flake: ritual valorizado por entusiastas</li>
+            </ul>
+          </div>
+          <div class="review-col cons">
+            <h4 style="color: var(--red-soft);">Críticas</h4>
+            <ul>
+              <li>Exige técnica de preparo (quebrar/rub o flake)</li>
+              <li>Nicotina alta — inexperientes enjoam</li>
+              <li>Samuel Gawith: episódios de mofo relatados</li>
+              <li>Escudo: difícil de encontrar no Brasil</li>
+              <li>Perique mal dosado deixa blend áspero</li>
+              <li>Preço premium alto (R$ 180–280)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <div class="category-header">
+        <div class="category-name">Cornell &amp; Diehl / G.L. Pease (Artesanal Small Batch)</div>
+        <span class="tag">Topo de mercado artesanal</span>
+      </div>
+      <div class="category-body">
+        <div class="review-grid">
+          <div class="review-col pros">
+            <h4 style="color: var(--green-soft);">Elogios</h4>
+            <ul>
+              <li>Variedade impressionante: 150+ blends regulares + Small Batch</li>
+              <li>Folhas selecionadas e rastreáveis (origem, safra)</li>
+              <li>Small Batch cria lançamentos colecionáveis e antecipação</li>
+              <li>Jeremy Reeves reconhecido como blendmaster excepcional</li>
+              <li>Haunted Bookshop, Bayou Morning: avaliações consistentemente 4+/5</li>
+              <li>Comunidade vibrant de colecionadores e "cellarers"</li>
+            </ul>
+          </div>
+          <div class="review-col cons">
+            <h4 style="color: var(--red-soft);">Críticas</h4>
+            <ul>
+              <li>Tobaccos podem chegar secos na lata — umidificação necessária</li>
+              <li>Incidente de mofo em 2016 (aparentemente corrigido)</li>
+              <li>Virgínias jovens/verdes com cheiro semelhante a cigarro</li>
+              <li>Corte "chunky" — irregular, criticamente avaliado por alguns</li>
+              <li>Dificuldade de importação regular no Brasil</li>
+              <li>Preço alto para o volume entregue</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Marcas que Decaíram em Qualidade (Pós-Reformulação)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Marca</th>
+            <th>Evento</th>
+            <th>Reação dos Consumidores</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-brand">Dunhill</td>
+            <td>Transferência para Peterson (2022)</td>
+            <td>Comunidade dividida: maioria aceita Peterson como sucessora legítima, mas puristas lamentam "a lata original não era igual"</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Mac Baren / Sutliff</td>
+            <td>Aquisição pela STG (2024) e fechamento das fábricas</td>
+            <td>Preocupação alta. "Só 14 SKUs sobrevivem." Corrida por estoque. Dúvida sobre qualidade pós-centralização da produção.</td>
+          </tr>
+          <tr>
+            <td class="td-brand">McClelland</td>
+            <td>Encerramento em 2018</td>
+            <td>Luto no setor. Lotes antigos vendidos por 2–3x o preço original em sites de leilão. Nenhum substituto direto encontrado.</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Sutliff</td>
+            <td>Fechamento da fábrica Virginia em fev/2025</td>
+            <td>Fumantes de blends acessíveis Sutliff sem alternativa nacional nos EUA. Oportunidade de mercado aberta.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       6. DIFERENCIAIS COMPETITIVOS
+  ══════════════════════════════════ -->
+  <section id="diferenciais">
+    <div class="section-label">Seção 06</div>
+    <h2>Diferenciais Competitivos <span class="accent">e Tendências</span></h2>
+    <p class="section-intro">
+      O que faz uma marca se destacar em 2025? Os dados de mercado revelam uma convergência clara
+      em torno de autenticidade, naturalidade e narrativa de origem.
+    </p>
+
+    <h3>O Que o Mercado Considera "Premium"</h3>
+    <div class="review-grid" style="margin-bottom:24px">
+      <div class="review-col">
+        <h4>Fatores de Premium</h4>
+        <ul class="pros">
+          <li>Folha envelhecida/curada artesanalmente</li>
+          <li>Origem rastreável da matéria-prima</li>
+          <li>Blendmaster nomeado e com história</li>
+          <li>Embalagem em lata metálica selada</li>
+          <li>Produção em pequenos lotes (small batch)</li>
+          <li>Blend sem aromatizantes artificiais</li>
+          <li>Corte específico e incomum (flake, rope, broken flake)</li>
+          <li>Lançamentos limitados e colecionáveis</li>
+        </ul>
+      </div>
+      <div class="review-col">
+        <h4>Fatores de Entrada/Commodity</h4>
+        <ul class="cons">
+          <li>Aromatizantes artificiais predominantes</li>
+          <li>Produção em larga escala / industrial</li>
+          <li>Embalagem em pouch plástico</li>
+          <li>Sem história de origem ou blendmaster</li>
+          <li>Disponibilidade irrestrita em qualquer ponto</li>
+          <li>Preço muito baixo como único diferencial</li>
+          <li>Tabaco jovem, sem maturação</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Tendências de Consumo 2024–2025</h3>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="number">↑</div>
+        <div class="label">Natural / Sem Aditivos</div>
+        <div class="sub">Consumidores buscam pureza e ingredientes rastreáveis</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">↑</div>
+        <div class="label">Small Batch / Edições Limitadas</div>
+        <div class="sub">Colecionismo e FOMO (medo de perder) impulsionam vendas</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">↑</div>
+        <div class="label">E-commerce Direto</div>
+        <div class="sub">Mais de 60% das vendas premium online — DTC é estratégico</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">↑</div>
+        <div class="label">Ritualistic Smoking</div>
+        <div class="sub">Cachimbo como ritual de desaceleração — wellness para homens 30+</div>
+      </div>
+    </div>
+
+    <h3>Embalagem e Apresentação</h3>
+    <p>
+      A embalagem é um diferencial concreto e mensurável em preço. Latas metálicas seladas (tipo
+      "Press Lid" ou "Slip Lid") são percebidas como premium e funcionam: preservam umidade e sabor
+      por anos, permitindo o "cellaring" (envelhecimento intencional), prática valorizada por
+      colecionadores. Pouches plásticos são associados a produtos entry-level ou bulk.
+    </p>
+    <p>
+      O design das latas das marcas mais conceituadas (G.L. Pease, C&amp;D Small Batch, Peterson)
+      é colecionável por si só — arte visual, numeração de lote e detalhes históricos no rótulo
+      são recursos que justificam preço premium sem custo incremental elevado.
+    </p>
+
+    <h3>Nichos Não Explorados no Brasil</h3>
+    <div class="opp-grid">
+      <div class="opp-card highlight">
+        <div class="opp-icon">🌿</div>
+        <div class="opp-title">Virginia Puro sem Aditivos</div>
+        <div class="opp-desc">Vácuo pós-McClelland nunca completamente preenchido. Produto mais difícil de executar, mas de altíssima valorização entre connoisseurs.</div>
+      </div>
+      <div class="opp-card highlight">
+        <div class="opp-icon">🌍</div>
+        <div class="opp-title">Terroir Brasileiro</div>
+        <div class="opp-desc">Brasil é grande produtor de tabaco (3° mundial). Narrativa de "fumo brasileiro nobre para cachimbo" tem apelo único e diferenciado globalmente.</div>
+      </div>
+      <div class="opp-card">
+        <div class="opp-icon">📦</div>
+        <div class="opp-title">Substituto Mac Baren/Sutliff</div>
+        <div class="opp-desc">Blends que replicam o perfil dos SKUs descontinuados (aromáticos, Virginia, Burley) podem capturar consumidores órfãos imediatamente.</div>
+      </div>
+      <div class="opp-card">
+        <div class="opp-icon">🎁</div>
+        <div class="opp-title">Edições Limitadas / Assinatura</div>
+        <div class="opp-desc">Modelo de assinatura mensal de "blend do mês" em small batch — cria receita recorrente e engajamento de comunidade.</div>
+      </div>
+      <div class="opp-card">
+        <div class="opp-icon">🤝</div>
+        <div class="opp-title">B2B para Tabacarias</div>
+        <div class="opp-desc">Fornecer blends a granel ou com rótulo privado para tabacarias premium — mercado B2B com margens e volumes estáveis.</div>
+      </div>
+      <div class="opp-card">
+        <div class="opp-icon">🌐</div>
+        <div class="opp-title">Exportação para Mercados Nichados</div>
+        <div class="opp-desc">E-commerce internacional permite acessar comunidades de fumantes americanos/europeus curiosos com blends de tabaco brasileiro.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       7. CONTEXTO REGULATÓRIO BR
+  ══════════════════════════════════ -->
+  <section id="contexto-br">
+    <div class="section-label">Seção 07</div>
+    <h2>Contexto Regulatório <span class="accent">Brasileiro</span></h2>
+    <p class="section-intro">
+      A regulação brasileira para fumo de cachimbo é exigente mas estruturada — entender o framework
+      é essencial para qualquer produtor nacional que queira atuar legalmente.
+    </p>
+
+    <h3>Anvisa — Registro Obrigatório</h3>
+    <p>
+      A <strong>RDC Nº 226/2018 (Anvisa)</strong> estabelece que <em>todo produto fumígeno derivado
+      do tabaco destinado à fabricação, comercialização ou importação no Brasil requer registro
+      prévio junto à Anvisa</em>. Fumo para cachimbo é expressamente incluído como produto
+      "destinado a ser fumado em cachimbo convencional". A ausência de registro implica proibição
+      de fabricação, importação e venda.
+    </p>
+
+    <div class="reg-grid">
+      <div class="reg-item">
+        <div class="reg-label">IPI — Imposto s/ Produtos Industrializados</div>
+        <div class="reg-value">30%</div>
+        <div class="reg-note">Aplicado sobre valor de saída de fábrica</div>
+      </div>
+      <div class="reg-item">
+        <div class="reg-label">PIS / COFINS</div>
+        <div class="reg-value">~11%</div>
+        <div class="reg-note">Contribuições federais sobre faturamento</div>
+      </div>
+      <div class="reg-item">
+        <div class="reg-label">ICMS (Circulação)</div>
+        <div class="reg-value">~30%</div>
+        <div class="reg-note">Varia por estado; calculado por dentro</div>
+      </div>
+      <div class="reg-item">
+        <div class="reg-label">Imposto de Importação</div>
+        <div class="reg-value">Variável</div>
+        <div class="reg-note">Adicional para produtos importados</div>
+      </div>
+      <div class="reg-item">
+        <div class="reg-label">Carga total (estimada)</div>
+        <div class="reg-value">~70%</div>
+        <div class="reg-note">Somando todos os tributos incidentes</div>
+      </div>
+      <div class="reg-item">
+        <div class="reg-label">Imposto Seletivo (Reforma)</div>
+        <div class="reg-value">Pendente</div>
+        <div class="reg-note">Reforma tributária prevê IS para tabaco</div>
+      </div>
+    </div>
+
+    <div class="alert alert-info">
+      <strong>Impacto Prático da Carga Tributária</strong>
+      A alta carga tributária encarece significativamente os produtos importados, criando uma
+      vantagem estrutural para fabricantes nacionais que produzem e vendem localmente.
+      Um produto artesanal nacional que cumpre todas as obrigações tributárias pode praticar
+      preços muito competitivos frente ao importado equivalente.
+    </div>
+
+    <h3>Principais Canais de Venda no Brasil</h3>
+    <div class="brand-grid">
+      <div class="brand-card">
+        <div class="brand-name">E-commerce Especializado</div>
+        <div class="brand-type">Canal principal atual</div>
+        <div class="brand-desc">
+          Tabacaria Shop, Charutos &amp; Tabacos, PipeSmoking360, Tabacaria da Mata, Tabacaria Premium,
+          Cachimbos Fumegantes. Lojas especializadas com entrega nacional. Principal canal de compra
+          para itens importados e nichados.
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-name">Tabacarias Físicas Premium</div>
+        <div class="brand-type">Canal de experiência e reputação</div>
+        <div class="brand-desc">
+          Concentradas em São Paulo (Jardim Paulista, Moema), Rio de Janeiro e capitais. Tabacaria da Mata
+          (Moema/Jardim Paulista), World Cigars, Tabacaria Camilo. Importante para posicionamento
+          premium e degustação.
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-name">Mercado Livre / Marketplaces</div>
+        <div class="brand-type">Alcance popular</div>
+        <div class="brand-desc">
+          Mercado Livre e similares têm volume relevante de buscas por "fumo para cachimbo".
+          Adequado para produtos de entrada e marcas nacionais. Menos indicado para posicionamento premium.
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-name">Importadores Diretos</div>
+        <div class="brand-type">B2B para tabacarias</div>
+        <div class="brand-desc">
+          Empresas especializadas em importação de tabaco para cachimbo que abastecem as tabacarias
+          brasileiras. Conhecer esses importadores é estratégico tanto para concorrer quanto para
+          distribuir via terceiros.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       8. PERFIL DO CONSUMIDOR
+  ══════════════════════════════════ -->
+  <section id="consumidor">
+    <div class="section-label">Seção 08</div>
+    <h2>Perfil do <span class="accent">Consumidor</span></h2>
+    <p class="section-intro">
+      O fumante de cachimbo brasileiro apresenta características bem definidas que distinguem este
+      segmento do consumidor de cigarro convencional.
+    </p>
+
+    <div class="stat-grid" style="margin-bottom:32px">
+      <div class="stat-card">
+        <div class="number">0,8%</div>
+        <div class="label">Fumantes de cachimbo</div>
+        <div class="sub">Do total de fumantes no Brasil (pequeno, mas dedicado)</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">30–55</div>
+        <div class="label">Faixa etária principal</div>
+        <div class="sub">Perfil clássico; crescimento entre 25–40 anos</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">Alto</div>
+        <div class="label">Poder aquisitivo</div>
+        <div class="sub">Produto de nicho com preços premium aceitos</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">Online</div>
+        <div class="label">Comportamento de compra</div>
+        <div class="sub">Forte uso de fóruns e comunidades digitais</div>
+      </div>
+    </div>
+
+    <h3>Segmentos de Consumidores</h3>
+
+    <h4>O Iniciante (Aromático)</h4>
+    <p>Geralmente 25–40 anos, atraído pela estética e ritual do cachimbo. Começa com aromáticos suaves
+    (Captain Black, Doctor Pipe) pela facilidade e "room note" agradável. Sensível ao preço.
+    Influenciado por conteúdo no YouTube e grupos de Facebook/WhatsApp de cachimbo.</p>
+
+    <h4>O Entusiasta (Semi-avançado)</h4>
+    <p>Já experimentou aromáticos e busca mais complexidade — migra para English blends leves,
+    Virginia e blends Mac Baren de qualidade. Participa ativamente de fóruns (tobaccoreviews.com,
+    brothersofbriar.com, grupos BR). Coleciona blends e aprecia latas. Disposto a pagar R$ 150–250
+    por produto de qualidade.</p>
+
+    <h4>O Connoisseur (Avançado)</h4>
+    <p>Conhecimento profundo de tipos de tabaco, origens, processos de maturação. Compra Virginia puros,
+    flakes britânicos, blends artesanais raros. Cela (envelhece) suas latas intencionalmente.
+    Participa de discussões técnicas e influencia outros consumidores. Alto LTV (valor de vida).
+    Disposto a pagar R$ 250–350+ por experiência diferenciada.</p>
+
+    <div class="alert alert-info">
+      <strong>Comportamento Digital do Consumidor BR</strong>
+      O consumidor brasileiro de cachimbo está fortemente presente em grupos de Facebook
+      ("Cachimbo Brasil", "Fumantes de Cachimbo"), no YouTube (canais de review nacionais e internacionais)
+      e começa a aparecer no Instagram com conteúdo de coleções. A comunidade é pequena mas extremamente
+      coesa e com alto potencial de marketing boca-a-boca.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       9. OPORTUNIDADES PARA PRODUTOR NACIONAL
+  ══════════════════════════════════ -->
+  <section id="oportunidades">
+    <div class="section-label">Seção 09</div>
+    <h2>Oportunidades para um <span class="accent">Produtor Artesanal Nacional</span></h2>
+    <p class="section-intro">
+      A confluência de fatores de mercado em 2024–2025 cria uma janela incomum para produtores
+      artesanais brasileiros. Abaixo, as principais oportunidades mapeadas e avaliadas.
+    </p>
+
+    <div class="opp-grid">
+      <div class="opp-card highlight">
+        <div class="opp-icon">🏭</div>
+        <div class="opp-title">1. Vácuo Pós-STG — Urgente</div>
+        <div class="opp-desc">
+          Com o fechamento da Sutliff (fev/2025) e Mac Baren (2027), centenas de blends são descontinuados.
+          Consumidores fidelizados estão ativamente buscando substitutos. Comunicação direcionada para
+          esse público pode converter clientes rapidamente.
+          <br><br><strong style="color:var(--gold)">Prazo de ação: imediato</strong>
+        </div>
+      </div>
+
+      <div class="opp-card highlight">
+        <div class="opp-icon">🇧🇷</div>
+        <div class="opp-title">2. Terroir Nacional — Narrativa Única</div>
+        <div class="opp-desc">
+          O Brasil é o 3° maior produtor de tabaco do mundo. Uma marca que explore
+          <em>"blends de tabaco brasileiro puro, curado artesanalmente"</em> tem narrativa de origem
+          autêntica e diferenciada — rara no mercado global de cachimbo, dominado por Europa e EUA.
+          <br><br><strong style="color:var(--gold)">Diferencial de longo prazo</strong>
+        </div>
+      </div>
+
+      <div class="opp-card">
+        <div class="opp-icon">🎨</div>
+        <div class="opp-title">3. Small Batch com Identidade Visual</div>
+        <div class="opp-desc">
+          Modelo C&amp;D aplicado ao Brasil: produção em pequenos lotes nomeados, com numeração,
+          arte na lata e história do blend. Cria cultura de colecionismo, aumenta o preço
+          percebido e gera tráfego orgânico via curiosidade da comunidade.
+        </div>
+      </div>
+
+      <div class="opp-card">
+        <div class="opp-icon">🌿</div>
+        <div class="opp-title">4. Linha Sem Aditivos / Natural</div>
+        <div class="opp-desc">
+          Crescente demanda por blends sem aromatizantes artificiais, especialmente entre
+          consumidores mais informados. Certificação ou declaração "sem aditivos" como argumento
+          de venda. Diferencial regulatório menor que cigarros.
+        </div>
+      </div>
+
+      <div class="opp-card">
+        <div class="opp-icon">📬</div>
+        <div class="opp-title">5. Assinatura Mensal / Clube</div>
+        <div class="opp-desc">
+          "Blend do mês" enviado diretamente ao assinante. Modelo de receita recorrente com
+          baixo churn em nicho apaixonado. Cada lançamento pode ter história, notas de degustação
+          e recomendações de cachimbo. Comunidade integrada ao produto.
+        </div>
+      </div>
+
+      <div class="opp-card">
+        <div class="opp-icon">🤝</div>
+        <div class="opp-title">6. Fornecimento B2B para Tabacarias</div>
+        <div class="opp-desc">
+          As principais tabacarias online brasileiras já buscam blends premium nacionais.
+          Ser o fornecedor preferencial de blends artesanais para essas lojas garante
+          volume regular, distribuição nacional e visibilidade sem custo de marketing.
+        </div>
+      </div>
+    </div>
+
+    <h3>Posicionamento de Preço Recomendado</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Linha</th>
+            <th>Gramatura</th>
+            <th>Preço Sugerido BR</th>
+            <th>Posicionamento</th>
+            <th>Concorrência Direta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-brand">Linha de entrada</td>
+            <td>50g pouch</td>
+            <td class="td-price">R$ 45–65</td>
+            <td>Acessível nacional</td>
+            <td>Captain Black (R$ 37–42)</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Linha premium nacional</td>
+            <td>50g lata metálica</td>
+            <td class="td-price">R$ 90–130</td>
+            <td>Premium acessível</td>
+            <td>Mac Baren 7 Seas (R$90–110)</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Linha artesanal / signature</td>
+            <td>50g lata design</td>
+            <td class="td-price">R$ 130–180</td>
+            <td>Artesanal premium</td>
+            <td>Mac Baren Pure Virginia (R$150+)</td>
+          </tr>
+          <tr>
+            <td class="td-brand">Small Batch / Edição Limitada</td>
+            <td>50g lata colecionável</td>
+            <td class="td-price">R$ 160–220</td>
+            <td>Colecionável topo</td>
+            <td>Peterson 50g (R$ 230–260)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       10. CONCLUSÃO
+  ══════════════════════════════════ -->
+  <section id="conclusao">
+    <div class="section-label">Seção 10</div>
+    <h2>Conclusão e <span class="accent">Recomendações Estratégicas</span></h2>
+
+    <div class="conclusion-block">
+      <h3>O Momento é Agora</h3>
+      <p>
+        O mercado de fumo de cachimbo vive em 2025 o maior momento de disrupção em décadas:
+        McClelland fechou em 2018, Dunhill saiu do mercado, Mac Baren e Sutliff estão sendo
+        descontinuados pela STG. Isso criou um vácuo de demanda reprimida que os grandes
+        conglomerados — cada vez mais focados em cigarros eletrônicos e redução de portfólio —
+        não têm interesse em preencher.
+      </p>
+      <p>
+        Simultaneamente, o consumidor global de cachimbo está mais exigente, mais digital,
+        mais jovem e mais disposto a pagar por autenticidade e história do que em qualquer
+        momento anterior. O modelo C&amp;D — artesanal, rastreável, small batch, com blendmaster
+        identificado — é o modelo vencedor da última década e pode ser replicado com contexto
+        brasileiro único.
+      </p>
+    </div>
+
+    <h3>Prioridades Estratégicas para um Produtor Artesanal Nacional</h3>
+
+    <h4>1. Regularização e Registro (Fundação)</h4>
+    <p>Obter registro Anvisa para os produtos é o pré-requisito inegociável.
+    Sem isso, qualquer canal de venda online estruturado fica bloqueado. O processo é trabalhoso
+    mas viabiliza a operação legal, acesso a tabacarias tradicionais e exportação.</p>
+
+    <h4>2. Portfólio Inicial Estratégico</h4>
+    <p>Começar com <strong>3–5 blends bem executados</strong> em vez de catálogo vasto:
+    (a) um aromático suave como porta de entrada, (b) um Virginia puro ou Virginia/Burley sem
+    aditivos para o consumidor avançado, (c) um blend "signature" com tabaco brasileiro como
+    herói da narrativa. Qualidade consistente supera variedade.</p>
+
+    <h4>3. Embalagem que Justifica o Preço</h4>
+    <p>Investir em latas metálicas de qualidade, design gráfico profissional e numeração de lote
+    desde o início. A embalagem comunica valor antes mesmo do primeiro fumado.
+    Custo incremental compensa diretamente no preço de venda possível.</p>
+
+    <h4>4. Comunidade Antes de Escala</h4>
+    <p>O canal digital (grupos de cachimbo no Facebook, YouTube, Instagram) é onde o consumidor
+    de cachimbo vive. Criar conteúdo autêntico — processo de blending, seleção de folha, receitas —
+    constrói reputação que nenhum valor de mídia paga compra. Comunidade fidelizada gera
+    defensores orgânicos da marca.</p>
+
+    <h4>5. Canal B2B como Âncora de Volume</h4>
+    <p>Parcerias com as principais tabacarias online brasileiras garantem volume regular e visibilidade
+    imediata na base de clientes já formada. Ser listado na Tabacaria Shop, Charutos &amp; Tabacos
+    e Tabacaria da Mata coloca o produto na frente de quem já compra fumo para cachimbo.</p>
+
+    <div class="alert alert-success">
+      <strong>Síntese da Oportunidade</strong>
+      Um produtor artesanal brasileiro com acesso a folha nacional de qualidade, capacidade de
+      blending e comprometimento com regularização pode construir em 2–3 anos uma marca de
+      expressão nacional — com potencial de exportação — no exato momento em que o mercado
+      global está mais aberto a novos entrantes autênticos do que em qualquer outro período recente.
+      O maior risco não é a concorrência; é a inação.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FONTES
+  ══════════════════════════════════ -->
+  <section id="fontes">
+    <div class="section-label">Referências</div>
+    <h2>Fontes <span class="accent">Consultadas</span></h2>
+    <p class="section-intro" style="margin-bottom:24px">
+      Pesquisa realizada em maio de 2026. Dados de preços brasileiros referentes a tabacarias online
+      nacionais; preços internacionais das principais lojas americanas e europeias especializadas.
+    </p>
+    <ul class="sources-list">
+      <li><a href="https://www.smokingpipes.com" target="_blank">Smokingpipes.com — Referência global de blends e preços</a></li>
+      <li><a href="https://www.tobaccoreviews.com" target="_blank">TobaccoReviews.com — Avaliações e ratings de consumidores</a></li>
+      <li><a href="https://cigar-coop.com/2025/01/stg-shutting-down-sutliff-tobacco" target="_blank">Cigar-Coop: STG fecha Sutliff e Mac Baren (jan/2025)</a></li>
+      <li><a href="https://www.tabacariashop.com" target="_blank">Tabacaria Shop — Preços BR de referência</a></li>
+      <li><a href="https://www.charutosetabacos.net" target="_blank">Charutos &amp; Tabacos — Portfólio e preços BR</a></li>
+      <li><a href="https://www.tabacariadamata.com.br" target="_blank">Tabacaria da Mata — Referência SP</a></li>
+      <li><a href="https://www.bnbtobacco.com/blogs/news/unlocking-the-world-of-premium-pipe-tobacco-in-2025" target="_blank">BnB Tobacco: Premium Pipe Tobacco 2025</a></li>
+      <li><a href="https://thepipeprofessor.com/2025/01/08/top-5-pipe-tobaccos-of-2024" target="_blank">The Pipe Professor: Top 5 de 2024</a></li>
+      <li><a href="https://tobaccobusiness.com/mcclelland-tobacco-company-ceases-operation" target="_blank">Tobacco Business: Fechamento McClelland (2018)</a></li>
+      <li><a href="https://www.smokingpipes.com/smokingpipesblog/single.cfm/post/life-after-mcclelland" target="_blank">Smokingpipes: Vida após McClelland</a></li>
+      <li><a href="https://pipesmokersdens.com" target="_blank">Pipe Smokers Den — Fóruns e avaliações</a></li>
+      <li><a href="https://www.brothersofbriar.com" target="_blank">Brothers of Briar — Comunidade e reviews</a></li>
+      <li><a href="https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2009/res0046_28_08_2009.html" target="_blank">Anvisa RDC 46/2009 — Regulamentação produtos fumígenos</a></li>
+      <li><a href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/12527411" target="_blank">Anvisa RDC Nº 226/2018 — Registro obrigatório</a></li>
+      <li><a href="https://www.cornellanddiehl.com" target="_blank">Cornell &amp; Diehl — Blendmaster artesanal</a></li>
+      <li><a href="https://blogdocharuto.com/2023/08/04/descubra-os-famosos-fumos-para-cachimbo-nacionais" target="_blank">Blog do Charuto: Fumos nacionais brasileiros</a></li>
+      <li><a href="https://mac-baren.com/pipe-tobacco/" target="_blank">Mac Baren — Portfólio oficial</a></li>
+      <li><a href="https://www.verifiedmarketreports.com/product/pipe-tobacco-market-size-and-forecast" target="_blank">Verified Market Reports: Pipe Tobacco Market Size &amp; Forecast</a></li>
+      <li><a href="https://www.openpr.com/news/4247274" target="_blank">OpenPR: Global Pipe Tobacco Market Growth 2025</a></li>
+      <li><a href="https://www.pipesmoking360.com" target="_blank">PipeSmoking360 — Tabacaria online BR</a></li>
+    </ul>
+  </section>
+
+</div><!-- /container -->
+
+<footer>
+  <p><strong style="color:var(--gold)">Dossiê: Mercado de Fumo de Cachimbo — Brasil &amp; Mundo</strong></p>
+  <p>Compilado em maio de 2026 com base em pesquisa de mercado primária (web) e fontes especializadas.</p>
+  <p style="margin-top:8px; color: var(--text-muted)">
+    Documento de uso comercial. Preços sujeitos a variação. Para decisões de investimento,
+    recomenda-se pesquisa de campo adicional junto a tabacarias e distribuidores.
+  </p>
+</footer>
+
+</body>
+</html>

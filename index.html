@@ -94,6 +94,7 @@
         header { background-color: #0d0a08; padding: 18px 25px; border-bottom: 2px solid #d4af37; position: sticky; top: 0; z-index: 1000; display: flex; align-items: center; justify-content: space-between; }
         .nav-blog { color: #d4af37; text-decoration: none; font-size: 0.95em; letter-spacing: 1px; text-transform: uppercase; transition: 0.3s; }
         .nav-blog:hover { color: #fff; }
+        @keyframes pulseNovo { 0%,100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212,175,55,0.55); } 50% { transform: scale(1.06); box-shadow: 0 0 0 7px rgba(212,175,55,0); } }
         .logo-aguia { width: 90px; height: auto; display: block; }
         .tagline { background: #0d0a08; padding: 22px 20px; text-align: center; border-bottom: 1px solid #2c241c; }
         .tagline p { color: #d4af37; font-size: clamp(1em, 3vw, 1.6em); letter-spacing: 2px; font-style: italic; margin: 0; line-height: 1.5; }
@@ -134,7 +135,7 @@
 
 <header>
     <img src="logo-aguia.jpeg" alt="33 Tabaco - Bebedouro SP" class="logo-aguia" onerror="this.onerror=null; this.src='logo-aguia.png';">
-    <a href="blog/index.html" class="nav-blog">Blog</a>
+    <a href="blog/index.html" class="nav-blog" id="navBlog" style="position:relative; display:inline-flex; align-items:center; gap:8px;">Blog<span id="blogNovo" style="display:none; background:#d4af37; color:#1a1510; font-size:0.62em; font-weight:bold; letter-spacing:1px; padding:3px 9px; border-radius:12px; text-transform:uppercase; animation:pulseNovo 1.6s infinite;">🔔 Novo</span></a>
 </header>
 
 <div class="tagline">
@@ -181,7 +182,13 @@
 
 <section class="blog-destaque">
     <h2>Do Blog 33 Tabaco</h2>
-    <a href="blog/como-fazer-palheiro-artesanal.html" class="card-blog">
+    <a href="blog/cigarro-de-palha-festa-junina.html" class="card-blog">
+        <span class="tag-blog">Cultura Caipira</span>
+        <h3>Cigarro de Palha e Festa Junina: A Tradição Caipira Que Não Se Apaga</h3>
+        <p>Festa junina e palheiro nasceram do mesmo chão. Por que o cigarro de palha é símbolo vivo da cultura caipira — da palha de milho à fogueira de São João.</p>
+        <span class="btn-blog">Ler artigo</span>
+    </a>
+    <a href="blog/como-fazer-palheiro-artesanal.html" class="card-blog" style="margin-top: 20px;">
         <span class="tag-blog">Guia Prático</span>
         <h3>Como Fazer Palheiro Artesanal: Do Fumo à Palha, Passo a Passo</h3>
         <p>Guia completo para produzir palheiro artesanal com qualidade: escolha do fumo, preparo da palha de milho, enrolamento correto e os erros que destroem um bom produto.</p>
@@ -216,5 +223,20 @@
 </a>
 
 
+<script>
+(function(){
+  // Sino "Novo" do blog. ATUALIZE a data a cada novo post publicado (formato AAAA-MM-DD):
+  var LATEST_POST = '2026-06-20';
+  try {
+    var seen = localStorage.getItem('blog33_seen') || '';
+    if (LATEST_POST > seen) {
+      var badge = document.getElementById('blogNovo');
+      if (badge) badge.style.display = 'inline-block';
+    }
+    var link = document.getElementById('navBlog');
+    if (link) link.addEventListener('click', function(){ try { localStorage.setItem('blog33_seen', LATEST_POST); } catch(e){} });
+  } catch(e){}
+})();
+</script>
 </body>
 </html>

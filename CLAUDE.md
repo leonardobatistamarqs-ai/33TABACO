@@ -2,7 +2,7 @@
 
 ## O Negócio
 
-**33 Tabaco** é uma empresa de Bebedouro/SP especializada em fumo desfiado a granel e palheiros artesanais. O diferencial é o blend exclusivo de **cordas mineiras** — fumo de corda do interior de Minas Gerais, tratado artesanalmente, com corpo encorpado e suavidade no trago.
+**33 Tabaco** é uma empresa de Bebedouro/SP especializada em fumo desfiado a granel e palheiros artesanais. O diferencial é o blend exclusivo de **cordas mineiras, goianas e de Arapiraca** — fumo de corda tratado artesanalmente, com corpo encorpado e suavidade no trago.
 
 **Contatos:**
 - WhatsApp: (17) 98108-5993 → `https://wa.me/5517981085993`

@@ -17,7 +17,7 @@
 - Fumo desfiado a granel (para produtores)
 - Palheiro Artesanal (pronto para revenda)
 - Mestre do Fumo (blend exclusivo da casa)
-- ⚠️ **Arapiraca D'Corda está temporariamente fora** — não mencionar em nenhum conteúdo novo
+- Blend com cordas mineiras, goianas e de Arapiraca
 
 **Restrição importante:** tabaco e fumo não podem ter tráfego pago (Google Ads, Meta Ads estão bloqueados). Todo o crescimento é por SEO orgânico.
 
@@ -144,7 +144,6 @@ robots.txt
 ## Instruções Gerais
 
 - **Sempre fazer commit e push** após qualquer alteração
-- **Nunca mencionar Arapiraca D'Corda** até nova instrução
 - **Não inventar dados** sobre a empresa (rendimento, preços, volumes) — usar só o que está nos arquivos existentes
 - **Manter o sitemap atualizado** sempre que criar ou remover páginas
 - **Google Analytics** já está em todas as páginas — não esquecer em páginas novas

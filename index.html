@@ -99,6 +99,14 @@
         .tagline { background: #0d0a08; padding: 22px 20px; text-align: center; border-bottom: 1px solid #2c241c; }
         .tagline p { color: #d4af37; font-size: clamp(1em, 3vw, 1.6em); letter-spacing: 2px; font-style: italic; margin: 0; line-height: 1.5; }
 
+        .atalhos { background: #15100c; padding: 20px 16px 24px; border-bottom: 1px solid #2c241c; }
+        .atalhos .titulo { color: #7a6f5c; font-size: 0.72em; letter-spacing: 2px; text-transform: uppercase; text-align: center; margin: 0 0 16px; }
+        .atalhos .lista { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; max-width: 900px; margin: auto; }
+        .atalho { display: inline-block; background: #2c241c; color: #d4af37; border: 1px solid #d4af37; padding: 10px 22px; border-radius: 30px; font-size: 0.92em; text-decoration: none; transition: 0.25s; white-space: nowrap; }
+        .atalho:hover { background: #d4af37; color: #1a1510; }
+        .atalho.destaque { background: #d4af37; color: #1a1510; font-weight: bold; }
+        .atalho.destaque:hover { background: #fff; }
+
         .audiencias { padding: 80px 20px; max-width: 1100px; margin: auto; text-align: center; }
         .audiencias h2 { color: #d4af37; font-size: clamp(1.3em, 3vw, 2em); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; }
         .audiencias p { color: #e4dccf; font-size: 1.1em; max-width: 700px; margin: 0 auto 60px; }
@@ -177,6 +185,17 @@
 <div class="tagline">
     <p>Diferente dos iguais. Tradição artesanal, qualidade que o mercado respeita.</p>
 </div>
+
+<nav class="atalhos">
+    <p class="titulo">Vá direto ao que você procura</p>
+    <div class="lista">
+        <a href="produtores.html" class="atalho destaque" onclick="gtag('event','click_atalho_banner',{event_category:'navegacao',event_label:'fumo_granel'})">🌿 Fumo a Granel</a>
+        <a href="estabelecimentos.html" class="atalho" onclick="gtag('event','click_atalho_banner',{event_category:'navegacao',event_label:'palheiros'})">🚬 Palheiros</a>
+        <a href="distribuidores.html" class="atalho" onclick="gtag('event','click_atalho_banner',{event_category:'navegacao',event_label:'marcas_parceiras'})">🚚 Marcas Parceiras</a>
+        <a href="consultoria.html" class="atalho" onclick="gtag('event','click_atalho_banner',{event_category:'navegacao',event_label:'consultoria'})">🎓 Consultoria</a>
+        <a href="maquinario.html" class="atalho" onclick="gtag('event','click_atalho_banner',{event_category:'navegacao',event_label:'maquinario'})">⚙️ Maquinário</a>
+    </div>
+</nav>
 
 <section class="audiencias">
     <h2>Como podemos te atender?</h2>

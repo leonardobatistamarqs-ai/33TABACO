@@ -273,6 +273,19 @@
     </div>
 </section>
 
+<section style="background:#15100c; border-top:1px solid #2c241c; padding:70px 20px;">
+    <div style="max-width:620px; margin:auto; text-align:center;">
+        <h2 style="color:#d4af37; font-size:clamp(1.2em,3vw,1.8em); letter-spacing:2px; text-transform:uppercase; margin:0 0 15px;">Fique por dentro</h2>
+        <p style="color:#e4dccf; font-size:1.08em; line-height:1.7; margin:0 auto 30px; max-width:520px;">Novidades sobre fumo desfiado, dicas de produção de palheiro e conteúdo novo do blog — direto no seu email. Sem spam, só coisa boa.</p>
+        <form id="formNewsletter" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; max-width:480px; margin:auto;">
+            <input type="email" id="emailNewsletter" required placeholder="Seu melhor email" style="flex:1; min-width:220px; padding:15px 18px; border-radius:8px; border:1px solid #3a2f22; background:#221b14; color:#e4dccf; font-family:'Georgia',serif; font-size:1em;">
+            <button type="submit" id="btnNewsletter" style="background:#d4af37; color:#1a1510; border:none; padding:15px 32px; border-radius:8px; font-weight:bold; text-transform:uppercase; letter-spacing:1px; font-size:0.95em; cursor:pointer; transition:0.25s; font-family:'Georgia',serif;" onmouseover="this.style.background='#fff'" onmouseout="this.style.background='#d4af37'">Quero receber</button>
+        </form>
+        <p id="msgNewsletter" style="color:#b8d4a0; font-size:0.95em; margin:18px 0 0; min-height:20px;"></p>
+        <p style="color:#7a6f5c; font-size:0.8em; margin:14px 0 0;">Seus dados ficam só com a 33 Tabaco. Você pode sair quando quiser.</p>
+    </div>
+</section>
+
 <footer>
     <p>&copy; 2026 33 Tabaco — Bebedouro/SP</p>
     <p style="margin-top: 10px; letter-spacing: 1px; font-size: 0.9em;">PALHEIRO ARTESANAL &amp; FUMO DESFIADO PREMIUM</p>
@@ -309,6 +322,45 @@ function fecharDistribuidor(){
     var link = document.getElementById('navBlog');
     if (link) link.addEventListener('click', function(){ try { localStorage.setItem('blog33_seen', LATEST_POST); } catch(e){} });
   } catch(e){}
+})();
+
+(function(){
+  // Newsletter: envia o email pro Google Sheets via Apps Script.
+  // COLE AQUI a URL do Web App do Apps Script (termina em /exec):
+  var NEWSLETTER_URL = 'https://script.google.com/macros/s/AKfycbwqHxhr75m6Yjgb7FuR71udc0Aa4Ic6NA16IEr1lvSmu1QCQK4dxP-cqEkBKX4_TarE/exec';
+
+  var form = document.getElementById('formNewsletter');
+  if (!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = document.getElementById('emailNewsletter').value.trim();
+    var msg = document.getElementById('msgNewsletter');
+    var btn = document.getElementById('btnNewsletter');
+    if (!email) return;
+    if (NEWSLETTER_URL.indexOf('COLE_A_URL') !== -1) {
+      msg.style.color = '#c98a8a';
+      msg.textContent = 'Newsletter ainda em configuração. Tente novamente em breve.';
+      return;
+    }
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+    var dados = new URLSearchParams({ email: email, origem: 'home' });
+    fetch(NEWSLETTER_URL, { method: 'POST', mode: 'no-cors', body: dados })
+      .then(function(){
+        msg.style.color = '#b8d4a0';
+        msg.textContent = 'Pronto! Você está na lista. Obrigado. 🌿';
+        form.reset();
+        try { gtag('event','newsletter_inscricao',{event_category:'newsletter',event_label:'home'}); } catch(err){}
+      })
+      .catch(function(){
+        msg.style.color = '#c98a8a';
+        msg.textContent = 'Ops, algo deu errado. Tente de novo em instantes.';
+      })
+      .finally(function(){
+        btn.disabled = false;
+        btn.textContent = 'Quero receber';
+      });
+  });
 })();
 </script>
 </body>

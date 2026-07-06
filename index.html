@@ -151,6 +151,7 @@
 <body>
 
 <script src="/age-gate.js"></script>
+<script src="/newsletter.js" defer></script>
 <div class="pop-overlay" id="popupDistribuidor" onclick="if(event.target===this){fecharDistribuidor();}">
   <div class="pop-box">
     <div class="pop-bar">
@@ -194,6 +195,7 @@
         <a href="consultoria.html" class="atalho" onclick="gtag('event','click_atalho_banner',{event_category:'navegacao',event_label:'consultoria'})">🎓 Consultoria</a>
         <a href="maquinario.html" class="atalho" onclick="gtag('event','click_atalho_banner',{event_category:'navegacao',event_label:'maquinario'})">⚙️ Maquinário</a>
         <a href="blog/index.html" class="atalho" onclick="gtag('event','click_atalho_banner',{event_category:'navegacao',event_label:'blog'})">📖 Blog</a>
+        <a href="#newsletter" class="atalho" onclick="gtag('event','click_atalho_banner',{event_category:'navegacao',event_label:'newsletter'})">📧 Newsletter</a>
     </div>
 </nav>
 
@@ -273,7 +275,7 @@
     </div>
 </section>
 
-<section style="background:#15100c; border-top:1px solid #2c241c; padding:70px 20px;">
+<section id="newsletter" style="background:#15100c; border-top:1px solid #2c241c; padding:70px 20px; scroll-margin-top:90px;">
     <div style="max-width:620px; margin:auto; text-align:center;">
         <h2 style="color:#d4af37; font-size:clamp(1.2em,3vw,1.8em); letter-spacing:2px; text-transform:uppercase; margin:0 0 15px;">Fique por dentro</h2>
         <p style="color:#e4dccf; font-size:1.08em; line-height:1.7; margin:0 auto 30px; max-width:520px;">Novidades sobre fumo desfiado, dicas de produção de palheiro e conteúdo novo do blog — direto no seu email. Sem spam, só coisa boa.</p>

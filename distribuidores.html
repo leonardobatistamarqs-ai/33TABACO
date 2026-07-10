@@ -34,7 +34,8 @@
         {"@type": "ListItem", "position": 1, "name": "Rancho Fundo", "url": "https://33tabaco.com.br/ranchofundo/"},
         {"@type": "ListItem", "position": 2, "name": "Palheiros Barreiro", "url": "https://33tabaco.com.br/barreiro/"},
         {"@type": "ListItem", "position": 3, "name": "Santo Palheiro", "url": "https://33tabaco.com.br/santopalheiro/"},
-        {"@type": "ListItem", "position": 4, "name": "Palheiros Dois Irmãos", "url": "https://33tabaco.com.br/palheirosdoisirmaos/"}
+        {"@type": "ListItem", "position": 4, "name": "Palheiros Dois Irmãos", "url": "https://33tabaco.com.br/palheirosdoisirmaos/"},
+        {"@type": "ListItem", "position": 5, "name": "Tesouro Mineiro", "url": "https://33tabaco.com.br/tesourodeminas/"}
       ]
     }
     </script>
@@ -60,6 +61,8 @@
         .card-marca p { color: #c9bfb0; font-size: 0.98em; line-height: 1.7; margin: 0 0 20px; }
         .card-marca .ver { display: inline-block; background: #d4af37; color: #1a1510; padding: 11px 28px; font-weight: bold; border-radius: 5px; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px; }
         .card-marca:hover .ver { background: #fff; }
+        .card-marca.tem-selo { position: relative; }
+        .card-marca .selo-em-breve { position: absolute; top: 16px; right: -34px; background: #B38B4D; color: #1a1510; font-weight: bold; font-size: 0.75em; letter-spacing: 1px; text-transform: uppercase; padding: 6px 40px; transform: rotate(40deg); box-shadow: 0 2px 8px rgba(0,0,0,0.4); z-index: 2; }
 
         .em-breve { background: #1a1510; border: 1px dashed #444; color: #6f665a; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 15px; padding: 60px 26px; font-style: italic; }
 
@@ -120,6 +123,18 @@
         <div class="info">
             <h3>Dois Irmãos</h3>
             <p>Palheiro artesanal com identidade visual marcante e qualidade que fideliza o consumidor.</p>
+            <span class="ver">Ver marca</span>
+        </div>
+    </a>
+
+    <a href="tesourodeminas/" class="card-marca tem-selo" style="overflow:visible;" onclick="gtag('event','click_marca_card',{event_category:'distribuicao',event_label:'tesouro_mineiro'})">
+        <span class="selo-em-breve">Em breve!</span>
+        <div style="overflow:hidden; border-radius:15px 15px 0 0;">
+            <img src="tesourodeminas/caixa-costas.png" alt="Tesouro Mineiro" loading="lazy" style="object-fit:contain; background:#4A1F22;">
+        </div>
+        <div class="info">
+            <h3>Tesouro Mineiro</h3>
+            <p>Palheiro artesanal premium com blend exclusivo e assinatura de sommeliers. A nova joia da 33 Tabaco.</p>
             <span class="ver">Ver marca</span>
         </div>
     </a>

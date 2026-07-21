@@ -12,8 +12,8 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palheiros Dois Irmãos | Marca Parceira 33 Tabaco</title>
-    <meta name="description" content="Palheiros Dois Irmãos — produto artesanal, embalagem marcante, tradição de qualidade. Seja distribuidor pela 33 Tabaco.">
+    <title>Palheiros Dois Irmãos | Tradição do Fumo Goiano · 33 Tabaco</title>
+    <meta name="description" content="Palheiros Dois Irmãos — a tradição do fumo goiano que atravessou fronteiras. Palheiro artesanal premium, distribuído no atacado para todo o Brasil pela 33 Tabaco.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://33tabaco.com.br/palheirosdoisirmaos/">
 
@@ -22,62 +22,92 @@
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "Palheiros Dois Irmãos",
-      "description": "Palheiro artesanal Dois Irmãos — produto artesanal com identidade visual marcante, disponível para distribuição no atacado pela 33 Tabaco.",
-      "image": "https://33tabaco.com.br/palheirosdoisirmaos/dois-irmaos.jpg",
+      "description": "Palheiro artesanal Dois Irmãos — a tradição do fumo goiano levada a outros estados. Produto artesanal premium, disponível para distribuição no atacado pela 33 Tabaco.",
+      "image": "https://33tabaco.com.br/palheirosdoisirmaos/maco.png",
       "brand": {"@type": "Brand", "name": "Palheiros Dois Irmãos"}
     }
     </script>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Palheiros Dois Irmãos | Marca Parceira 33 Tabaco">
-    <meta property="og:description" content="Produto artesanal com identidade visual marcante. Seja distribuidor pela 33 Tabaco.">
+    <meta property="og:title" content="Palheiros Dois Irmãos | Tradição do Fumo Goiano · 33 Tabaco">
+    <meta property="og:description" content="A tradição do fumo goiano que atravessou fronteiras. Palheiro artesanal premium. Seja distribuidor pela 33 Tabaco.">
     <meta property="og:url" content="https://33tabaco.com.br/palheirosdoisirmaos/">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://33tabaco.com.br/palheirosdoisirmaos/dois-irmaos.jpg">
+    <meta property="og:image" content="https://33tabaco.com.br/palheirosdoisirmaos/maco.png">
 
     <style>
         * { box-sizing: border-box; }
-        body { font-family: 'Georgia', serif; background-color: #1a1510; color: #e4dccf; margin: 0; line-height: 1.6; }
-        header { background-color: #0d0a08; padding: 18px 25px; border-bottom: 2px solid #d4af37; display: flex; align-items: center; justify-content: space-between; }
+        :root {
+            --preto: #1a1510;
+            --dourado: #d4af37;
+            --marfim: #e4dccf;
+        }
+        body { font-family: 'Georgia', serif; background-color: var(--preto); color: var(--marfim); margin: 0; line-height: 1.6; }
+        header { background-color: #0d0a08; padding: 18px 25px; border-bottom: 2px solid var(--dourado); display: flex; align-items: center; justify-content: space-between; }
         .logo-aguia { width: 80px; height: auto; display: block; }
-        .nav-voltar { color: #d4af37; text-decoration: none; font-size: 0.9em; letter-spacing: 1px; text-transform: uppercase; transition: 0.3s; }
+        .nav-voltar { color: var(--dourado); text-decoration: none; font-size: 0.9em; letter-spacing: 1px; text-transform: uppercase; transition: 0.3s; }
         .nav-voltar:hover { color: #fff; }
 
-        .hero { max-width: 760px; margin: auto; padding: 70px 20px 40px; text-align: center; }
-        .hero-txt .tag { display: inline-block; background: #d4af37; color: #1a1510; padding: 5px 16px; font-size: 0.75em; letter-spacing: 2px; text-transform: uppercase; font-weight: bold; border-radius: 20px; margin-bottom: 18px; }
-        .hero-txt h1 { color: #d4af37; font-size: clamp(2.2em, 6vw, 3.6em); letter-spacing: 2px; text-transform: uppercase; margin: 0 0 10px; line-height: 1.1; }
-        .hero-txt .sub { color: #c9bfb0; font-size: 1.2em; font-style: italic; margin: 0; }
+        /* Hero full-screen com a pintura */
+        .hero { position: relative; min-height: 86vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; inset: 0; background: url('hero.jpg') center 24%/cover no-repeat; }
+        .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,21,16,0.62) 0%, rgba(26,21,16,0.48) 34%, rgba(26,21,16,0.80) 74%, rgba(26,21,16,0.97) 100%); }
+        .hero-inner { position: relative; z-index: 2; padding: 60px 20px; max-width: 860px; }
+        .hero .marca { color: var(--dourado); font-size: 0.8em; letter-spacing: 6px; text-transform: uppercase; margin: 0 0 14px; text-shadow: 0 2px 10px rgba(0,0,0,0.9); }
+        .hero h1 { color: #f3e3ae; font-size: clamp(2.8em, 10vw, 6.2em); letter-spacing: 4px; text-transform: uppercase; margin: 0; line-height: 0.98; text-shadow: 0 4px 26px rgba(0,0,0,0.95), 0 2px 6px rgba(0,0,0,0.9); }
+        .hero .selo-linhas { display: inline-block; border-top: 1px solid var(--dourado); border-bottom: 1px solid var(--dourado); padding: 10px 26px; margin-top: 22px; color: var(--dourado); font-size: clamp(0.72em, 2vw, 0.95em); letter-spacing: 3px; text-transform: uppercase; }
+        .hero .tagline { color: var(--marfim); font-size: clamp(1em, 2.4vw, 1.25em); margin: 26px 0 0; letter-spacing: 0.5px; text-shadow: 0 2px 12px rgba(0,0,0,0.95); font-style: italic; }
 
-        .apresentacao { max-width: 760px; margin: auto; padding: 30px 20px 20px; }
-        .apresentacao h2 { color: #d4af37; font-size: clamp(1.3em, 3vw, 1.8em); letter-spacing: 1px; margin-bottom: 22px; }
-        .apresentacao p { font-size: 1.12em; line-height: 1.9; color: #e4dccf; margin-bottom: 20px; }
-        .apresentacao strong { color: #d4af37; }
+        .apresentacao { max-width: 780px; margin: auto; padding: 65px 20px 20px; }
+        .apresentacao h2 { color: var(--dourado); font-size: clamp(1.3em, 3vw, 1.9em); letter-spacing: 1px; margin-bottom: 24px; text-align: center; }
+        .apresentacao p { font-size: 1.12em; line-height: 1.9; color: var(--marfim); margin-bottom: 20px; }
+        .apresentacao strong { color: var(--dourado); }
 
-        .galeria { max-width: 900px; margin: 20px auto 0; padding: 40px 20px; text-align: center; }
-        .galeria h2 { color: #d4af37; font-size: clamp(1.2em, 3vw, 1.7em); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 32px; }
-        .grid-fotos { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; align-items: end; justify-items: center; }
-        .foto-item { display: flex; flex-direction: column; align-items: center; gap: 12px; }
-        .foto-item img { max-width: 100%; max-height: 420px; border-radius: 12px; border: 1px solid #2c241c; display: block; cursor: pointer; transition: 0.4s; }
-        .foto-item img:hover { border-color: #d4af37; transform: scale(1.02); }
-        .foto-item .legenda { color: #c9bfb0; font-size: 0.95em; letter-spacing: 1px; text-transform: uppercase; }
+        /* Faixa: De Goiás para o Brasil */
+        .jornada { background: #17130d; border-top: 2px solid var(--dourado); border-bottom: 2px solid var(--dourado); margin-top: 55px; padding: 60px 20px; }
+        .jornada h2 { text-align: center; color: #f0dfae; font-size: clamp(1.5em, 4vw, 2.1em); letter-spacing: 2px; text-transform: uppercase; margin: 0 0 14px; }
+        .jornada .leg { text-align: center; color: #c9bfb0; font-size: 1.05em; margin: 0 auto 42px; max-width: 620px; }
+        .grid-jornada { max-width: 1050px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; }
+        .jcard { background: #14100b; border: 1px solid #3a2a24; border-radius: 14px; padding: 34px 26px; text-align: center; transition: 0.35s; }
+        .jcard:hover { border-color: var(--dourado); transform: translateY(-5px); }
+        .jcard .ic { font-size: 2em; display: block; margin-bottom: 16px; }
+        .jcard h3 { color: var(--dourado); font-size: 1.12em; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 12px; }
+        .jcard p { color: #c9bfb0; font-size: 0.98em; line-height: 1.72; margin: 0; }
 
-        .selos { max-width: 760px; margin: 10px auto 0; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 26px; }
+        /* Caráter do fumo */
+        .carater { max-width: 760px; margin: 55px auto 0; padding: 0 20px; text-align: center; }
+        .carater h2 { color: var(--dourado); font-size: clamp(1.3em, 3vw, 1.9em); letter-spacing: 1px; margin-bottom: 22px; }
+        .carater p { font-size: 1.12em; line-height: 1.9; color: var(--marfim); margin-bottom: 20px; }
+        .carater strong { color: var(--dourado); }
+        .carater .frase { color: var(--dourado); font-style: italic; font-size: clamp(1.15em, 3vw, 1.5em); line-height: 1.6; border-top: 1px solid #3a2f22; border-bottom: 1px solid #3a2f22; padding: 22px 10px; margin-top: 10px; }
+
+        /* Produto (maço) — 2 colunas */
+        .produto { max-width: 1080px; margin: 20px auto 0; padding: 65px 20px; display: grid; grid-template-columns: 1fr 1.25fr; gap: 50px; align-items: center; }
+        .produto .img-box { text-align: center; }
+        .produto .img-box img { max-width: 300px; width: 100%; border-radius: 12px; border: 1px solid #2c241c; cursor: pointer; transition: 0.4s; }
+        .produto .img-box img:hover { border-color: var(--dourado); transform: scale(1.02); }
+        .produto h2 { color: var(--dourado); font-size: clamp(1.3em, 3vw, 1.9em); letter-spacing: 1px; margin: 0 0 18px; }
+        .produto p { color: var(--marfim); font-size: 1.06em; line-height: 1.85; margin-bottom: 16px; }
+        .produto strong { color: var(--dourado); }
+        @media (max-width: 780px) { .produto { grid-template-columns: 1fr; text-align: center; } }
+
+        .selos { max-width: 820px; margin: 10px auto 0; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 26px; justify-content: center; }
         .selos span { color: #c9bfb0; font-size: 0.98em; }
-        .selos b { color: #d4af37; }
+        .selos b { color: var(--dourado); }
 
         .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.93); z-index: 100000; align-items: center; justify-content: center; padding: 20px; }
         .lightbox.show { display: flex; }
         .lightbox img { max-width: 95%; max-height: 92%; border-radius: 8px; }
         .lightbox .x { position: absolute; top: 20px; right: 28px; color: #fff; font-size: 40px; cursor: pointer; line-height: 1; }
 
-        .cta { max-width: 760px; margin: 50px auto; padding: 45px 30px; text-align: center; background: #2c241c; border: 1px solid #d4af37; border-radius: 15px; }
-        .cta h2 { color: #d4af37; font-size: clamp(1.2em, 3vw, 1.6em); text-transform: uppercase; letter-spacing: 1px; margin: 0 0 14px; }
+        .cta { max-width: 760px; margin: 50px auto; padding: 45px 30px; text-align: center; background: #2c241c; border: 1px solid var(--dourado); border-radius: 15px; }
+        .cta h2 { color: var(--dourado); font-size: clamp(1.2em, 3vw, 1.6em); text-transform: uppercase; letter-spacing: 1px; margin: 0 0 14px; }
         .cta p { color: #c9bfb0; font-size: 1.05em; margin: 0 0 28px; }
-        .btn-zap { display: inline-block; background: #d4af37; color: #1a1510; padding: 16px 42px; font-weight: bold; border-radius: 6px; text-transform: uppercase; font-size: 1em; letter-spacing: 1px; text-decoration: none; transition: 0.3s; }
+        .btn-zap { display: inline-block; background: var(--dourado); color: var(--preto); padding: 16px 42px; font-weight: bold; border-radius: 6px; text-transform: uppercase; font-size: 1em; letter-spacing: 1px; text-decoration: none; transition: 0.3s; }
         .btn-zap:hover { background: #fff; }
 
-        footer { background: #0d0a08; text-align: center; padding: 45px 20px; border-top: 2px solid #d4af37; color: #888; }
-        footer a { color: #d4af37; text-decoration: none; }
+        footer { background: #0d0a08; text-align: center; padding: 45px 20px; border-top: 2px solid var(--dourado); color: #888; }
+        footer a { color: var(--dourado); text-decoration: none; }
         .aviso { max-width: 760px; margin: 0 auto; padding: 0 20px 40px; color: #6f665a; font-size: 0.82em; text-align: center; }
 
     </style>
@@ -92,43 +122,72 @@
 </header>
 
 <section class="hero">
-    <div class="hero-txt">
-        <span class="tag">Marca Parceira · Distribuição</span>
+    <div class="hero-inner">
+        <p class="marca">Marca Parceira · Tradição do Fumo Goiano</p>
         <h1>Dois Irmãos</h1>
-        <p class="sub">"Palheiro artesanal, do jeito que tem que ser."</p>
+        <span class="selo-linhas">Raiz Goiana · Feito à Mão · Todo o Brasil</span>
+        <p class="tagline">"A herança que se acende."</p>
     </div>
 </section>
 
 <section class="apresentacao">
-    <h2>Tradição artesanal com identidade própria</h2>
-    <p>O <strong>Palheiros Dois Irmãos</strong> chegou com uma proposta clara: entregar um palheiro artesanal de qualidade, com uma identidade visual que se destaca na gôndola e fica na memória do consumidor. Embalagem marcante, produto de verdade.</p>
-    <p>Cada unidade é feita com o <strong>cuidado de quem entende de fumo</strong> — blend equilibrado, palha selecionada, acabamento que mostra respeito pelo fumante. É o tipo de palheiro que quem experimenta uma vez, volta a pedir.</p>
-    <p>Com a distribuição pela <strong>33 Tabaco</strong>, o Dois Irmãos chega com estrutura, regularidade e a confiança de quem está há anos no mercado de palheiros artesanais.</p>
+    <h2>A tradição do fumo goiano, agora em outros estados</h2>
+    <p>No interior do Brasil, fumo sempre foi coisa séria. Muito antes das grandes fábricas e das máquinas, era o <strong>caipira</strong> quem cuidava de tudo: plantava no quintal, colhia no tempo certo, curava a folha no sol e picava a corda no capricho — faca amolada e a paciência de quem não tem pressa. Ofício de mão, aprendido na varanda de casa e passado de pai pra filho.</p>
+    <p>Foi desse jeito que o <strong>fumo goiano</strong> ganhou nome. O sol forte do Centro-Oeste e a terra do cerrado deram à folha um caráter próprio — encorpado, limpo e honesto, do tipo que o fumante reconhece já na primeira tragada. Fama que atravessou Goiás e virou referência Brasil afora.</p>
+    <p>O <strong>Palheiros Dois Irmãos</strong> nasce dessa raiz. Como dois irmãos que herdam o ofício e saem pelo mundo levando no bolso o que aprenderam em casa, a marca carregou a tradição do fumo de Goiás na bagagem e cruzou as divisas do estado. Hoje esse gosto acende em cada canto do país — sem abrir mão da mão artesanal que deu origem a tudo.</p>
+    <p>Cada palheiro traz <strong>palha selecionada, blend equilibrado e acabamento honesto</strong>. Nada de atalho: é o tipo de tradição que não se inventa da noite pro dia. Se herda, se cuida e se passa adiante — palheiro por palheiro.</p>
+    <p>Com a <strong>33 Tabaco</strong> na distribuição, a tradição ganhou estrada: chega ao balcão do revendedor em <strong>todo o Brasil</strong>, com a constância de quem nunca falha na entrega.</p>
 </section>
 
-<section class="galeria">
-    <h2>Maço e Copão</h2>
-    <div class="grid-fotos">
-        <div class="foto-item">
-            <img src="maco.png" alt="Palheiros Dois Irmãos - maço premium" loading="lazy">
-            <span class="legenda">Maço</span>
+<section class="jornada">
+    <h2>De Goiás para o Brasil</h2>
+    <p class="leg">A raiz é goiana, mas a estrada é nacional.</p>
+    <div class="grid-jornada">
+        <div class="jcard">
+            <span class="ic">🌾</span>
+            <h3>Raiz Goiana</h3>
+            <p>Fumo de corda curado no sol do Centro-Oeste — a fama do fumo goiano, encorpado e com caráter, que virou referência de sabor.</p>
         </div>
-        <div class="foto-item">
-            <img src="dois-irmaos.jpg" alt="Palheiros Dois Irmãos - copão" loading="lazy">
-            <span class="legenda">Copão</span>
+        <div class="jcard">
+            <span class="ic">🤝</span>
+            <h3>Mão Artesanal</h3>
+            <p>Palha selecionada e feito com cuidado, palheiro por palheiro. Qualidade de verdade — daquelas que quem experimenta uma vez, volta a pedir.</p>
+        </div>
+        <div class="jcard">
+            <span class="ic">🚚</span>
+            <h3>Alcance Nacional</h3>
+            <p>Com a distribuição da 33 Tabaco, a tradição goiana chega a revendedores de outros estados, com estrutura e regularidade.</p>
         </div>
     </div>
 </section>
 
+<section class="carater">
+    <h2>O caráter do fumo goiano</h2>
+    <p>Fumo curado ao sol tem uma assinatura que máquina nenhuma copia: <strong>corpo na medida, sabor redondo e aquela presença</strong> que segura o trago do começo ao fim. No Dois Irmãos, a raiz goiana entra junto com o blend da casa — cordas mineiras, goianas e de Arapiraca — pra entregar um palheiro equilibrado, sem exagero e sem aspereza.</p>
+    <p class="frase">"O interior não ensina errado."</p>
+</section>
+
+<section class="produto">
+    <div class="img-box">
+        <img src="maco.png" alt="Palheiros Dois Irmãos - maço premium" loading="lazy">
+    </div>
+    <div class="texto">
+        <h2>Bonito por fora, honesto por dentro</h2>
+        <p>A embalagem do Dois Irmãos foi feita pra <strong>chamar atenção</strong>: arte marcante, os dois irmãos estampados na frente e o selo <strong>Premium · Produto Artesanal</strong> bem à mostra. É o tipo de maço que salta na prateleira — o cliente vê de longe e lembra na próxima compra.</p>
+        <p>Mas bonito não basta. Por dentro vem o que interessa: <strong>fumo de verdade</strong>, no ponto certo de umidade e queima, com a assinatura de qualidade da 33 Tabaco por trás. É promessa que se cumpre do primeiro ao último palheiro do maço.</p>
+    </div>
+</section>
+
 <div class="selos">
-    <span><b>✓</b> Produto artesanal</span>
-    <span><b>✓</b> Identidade visual marcante</span>
+    <span><b>✓</b> Raiz no fumo goiano</span>
+    <span><b>✓</b> Produto artesanal premium</span>
     <span><b>✓</b> Distribuição pela 33 Tabaco</span>
+    <span><b>✓</b> Alcance nacional</span>
 </div>
 
 <section class="cta">
     <h2>Quer ser distribuidor dos Palheiros Dois Irmãos?</h2>
-    <p>Revenda no atacado uma marca que chama atenção e tem qualidade de verdade. Fale direto com a gente.</p>
+    <p>Leve a tradição do fumo goiano pro seu estado. Revenda no atacado uma marca com raiz, qualidade e história. Fale direto com a gente.</p>
     <a href="https://wa.me/5517981085993?text=Oi%21%20Tenho%20interesse%20em%20distribuir%20os%20Palheiros%20Dois%20Irm%C3%A3os%20%28parceria%2033%20Tabaco%29." target="_blank" class="btn-zap" onclick="gtag('event','click_distribuidor_marca',{event_category:'distribuicao',event_label:'dois_irmaos'})">Quero distribuir</a>
 </section>
 
@@ -138,6 +197,7 @@
     <p>&copy; 2026 33 Tabaco — Bebedouro/SP</p>
     <p style="margin-top: 10px; letter-spacing: 1px; font-size: 0.9em;">DISTRIBUIÇÃO DE MARCAS PARCEIRAS DE PALHEIRO</p>
     <p style="margin-top: 15px;"><a href="https://wa.me/5517981085993" onclick="gtag('event','click_whatsapp_footer',{event_category:'botao_global',event_label:'dois_irmaos'})">WhatsApp: (17) 98108-5993</a></p>
+    <p style="margin-top: 18px; font-size: 0.72em; color: #5a5248;">Obra do hero: "Caipira Picando Fumo" (1893), de Almeida Júnior — Pinacoteca de São Paulo. Domínio público, via <a href="https://commons.wikimedia.org/wiki/File:Caipira_picando_fumo.jpg" target="_blank" rel="noopener" style="color:#7a6f5c;">Wikimedia Commons</a>.</p>
 </footer>
 
 <a href="https://wa.me/5517981085993?text=Oi%21%20Tenho%20interesse%20em%20distribuir%20os%20Palheiros%20Dois%20Irm%C3%A3os%20%28parceria%2033%20Tabaco%29." target="_blank" title="Falar no WhatsApp" style="position:fixed; bottom:25px; right:25px; background:#25D366; color:#fff; width:58px; height:58px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 15px rgba(0,0,0,0.4); z-index:9999; text-decoration:none; transition:0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" onclick="gtag('event','click_whatsapp_flutuante',{event_category:'botao_global',event_label:'dois_irmaos'})">
@@ -153,7 +213,7 @@
 (function(){
   var lb = document.getElementById('lightbox');
   var lbImg = document.getElementById('lightboxImg');
-  document.querySelectorAll('.grid-fotos img').forEach(function(img){
+  document.querySelectorAll('.produto img').forEach(function(img){
     img.addEventListener('click', function(){ lbImg.src = img.src; lb.classList.add('show'); });
   });
   document.addEventListener('keydown', function(e){ if(e.key==='Escape') lb.classList.remove('show'); });

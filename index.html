@@ -52,9 +52,18 @@
     <meta name="twitter:image" content="https://33tabaco.com.br/fumo-capa.webp">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+        h1, h2, h3, .tagline p, .pop-box, .intro h1, .cta-geral h2, .card-marca h3 { font-family: 'Playfair Display', serif; }
+
+        .wa-float { animation: waPulse 2s infinite; }
+        @keyframes waPulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.7s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
         * { box-sizing: border-box; }
-        body { font-family: 'Georgia', serif; background-color: #1a1510; color: #e4dccf; margin: 0; line-height: 1.6; scroll-behavior: smooth; }
-        header { background-color: #0d0a08; padding: 18px 25px; border-bottom: 2px solid #d4af37; position: sticky; top: 0; z-index: 1000; display: flex; align-items: center; justify-content: space-between; }
+        body { font-family: 'Inter', sans-serif; background-color: #1a1510; color: #e4dccf; margin: 0; line-height: 1.6; scroll-behavior: smooth; }
+        header { background-color: rgba(13, 10, 8, 0.75); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 18px 25px; border-bottom: 2px solid #d4af37; position: sticky; top: 0; z-index: 1000; display: flex; align-items: center; justify-content: space-between; }
         .nav-blog { color: #d4af37; text-decoration: none; font-size: 0.95em; letter-spacing: 1px; text-transform: uppercase; transition: 0.3s; }
         .nav-blog:hover { color: #fff; }
         @keyframes pulseNovo { 0%,100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212,175,55,0.55); } 50% { transform: scale(1.06); box-shadow: 0 0 0 7px rgba(212,175,55,0); } }
@@ -104,7 +113,7 @@
 
         @keyframes popIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
         .pop-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.82); z-index: 100000; display: flex; align-items: flex-start; justify-content: center; padding: 30px 16px; overflow-y: auto; }
-        .pop-box { background: #0d0a08; border: 2px solid #d4af37; border-radius: 14px; overflow: hidden; font-family: 'Georgia', serif; width: 100%; max-width: 760px; margin: auto; animation: popIn 0.35s ease; }
+        .pop-box { background: #0d0a08; border: 2px solid #d4af37; border-radius: 14px; overflow: hidden; font-family: 'Inter', sans-serif; width: 100%; max-width: 760px; margin: auto; animation: popIn 0.35s ease; }
         .pop-bar { background: #1a1510; padding: 10px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2c241c; }
         .pop-close { color: #7a6f5c; font-size: 26px; line-height: 1; text-decoration: none; cursor: pointer; }
         .pop-close:hover { color: #d4af37; }
@@ -170,35 +179,35 @@
     <p>A 33 Tabaco atende dois perfis distintos. Escolha o seu para conhecer os produtos e condições ideais para o seu negócio.</p>
 
     <div class="cards-audiencia">
-        <a href="produtores.html" class="card-audiencia">
+        <a href="produtores.html" class="card-audiencia reveal">
             <span class="icone">🌿</span>
             <h3>Produtores</h3>
             <p>Você produz palheiros ou trabalha com fumo? Fornecemos <strong>fumo desfiado a granel</strong> com blend técnico, peneirado, zero pó. Consistência lote a lote.</p>
             <span class="btn-card">Ver Fumo a Granel</span>
         </a>
 
-        <a href="estabelecimentos.html" class="card-audiencia">
+        <a href="estabelecimentos.html" class="card-audiencia reveal">
             <span class="icone">🏪</span>
             <h3>Estabelecimentos</h3>
             <p>Você tem bar, padaria ou tabacaria? Fornecemos <strong>palheiro pronto</strong> com blends exclusivos para revenda. Entrega direta, sem consignação.</p>
             <span class="btn-card">Ver Palheiros</span>
         </a>
 
-        <a href="consultoria.html" class="card-audiencia">
+        <a href="consultoria.html" class="card-audiencia reveal">
             <span class="icone">🎓</span>
             <h3>Consultoria</h3>
             <p>Quer escalar sua produção ou resolver problemas de qualidade? Oferecemos <strong>consultoria especializada</strong> em rendimento, blend, umidade e processo. Remota e presencial.</p>
             <span class="btn-card">Ver Consultoria</span>
         </a>
 
-        <a href="maquinario.html" class="card-audiencia">
+        <a href="maquinario.html" class="card-audiencia reveal">
             <span class="icone">⚙️</span>
             <h3>Maquinário</h3>
             <p>Equipamentos que transformam a produção de palheiros. Veja os <strong>maquinários para produtores</strong> — peneira rotativa, aplicação de essência e muito mais.</p>
             <span class="btn-card">Ver Maquinário</span>
         </a>
 
-        <a href="distribuidores.html" class="card-audiencia" onclick="gtag('event','click_distribuidor_card',{event_category:'distribuicao',event_label:'card_home'})">
+        <a href="distribuidores.html" class="card-audiencia reveal" onclick="gtag('event','click_distribuidor_card',{event_category:'distribuicao',event_label:'card_home'})">
             <span class="icone">🚚</span>
             <h3>Distribuição</h3>
             <p>Quer revender no atacado? Seja <strong>distribuidor de palheiros</strong> das marcas parceiras da 33 Tabaco — Dois Irmãos e Santo Palheiro.</p>
@@ -212,19 +221,19 @@
 
 <section class="blog-destaque">
     <h2>Do Blog 33 Tabaco</h2>
-    <a href="blog/fumo-desfiado-ruim-vs-premium.html" class="card-blog">
+    <a href="blog/fumo-desfiado-ruim-vs-premium.html" class="card-blog reveal">
         <span class="tag-blog">Novo · Para Vender Mais</span>
         <h3>Fumo Desfiado Ruim vs Premium: A Diferença Que Faz o Palheiro Vender</h3>
         <p>Palheiro que apaga, cliente que não volta, rendimento imprevisível: o preço escondido do fumo ruim. O que muda com um fumo premium aprovado em rua — pra quem está começando e pra quem decidiu trocar.</p>
         <span class="btn-blog">Ler artigo</span>
     </a>
-    <a href="blog/como-fazer-palheiro-artesanal.html" class="card-blog" style="margin-top: 20px;">
+    <a href="blog/como-fazer-palheiro-artesanal.html" class="card-blog reveal" style="margin-top: 20px;">
         <span class="tag-blog">Guia Prático</span>
         <h3>Como Fazer Palheiro Artesanal: Do Fumo à Palha, Passo a Passo</h3>
         <p>Guia completo para produzir palheiro artesanal com qualidade: escolha do fumo, preparo da palha de milho, enrolamento correto e os erros que destroem um bom produto.</p>
         <span class="btn-blog">Ler artigo</span>
     </a>
-    <a href="blog/fumo-de-corda.html" class="card-blog" style="margin-top: 20px;">
+    <a href="blog/fumo-de-corda.html" class="card-blog reveal" style="margin-top: 20px;">
         <span class="tag-blog">Matéria-Prima</span>
         <h3>Fumo de Corda: O Que É, Como É Feito e Por Que Faz o Melhor Palheiro</h3>
         <p>Do campo à corda: entenda o processo completo do fumo de corda mineiro e por que ele define a qualidade do palheiro artesanal.</p>
@@ -234,7 +243,7 @@
 </section>
 
 <section class="sobre">
-    <div class="sobre-inner">
+    <div class="sobre-inner reveal">
         <h2>Sobre a 33 Tabaco</h2>
         <p>Empresa de Bebedouro/SP com tradição no processamento artesanal de tabaco. Nosso blend combina <strong>cordas mineiras, goianas e de Arapiraca, com trato doce e seco</strong>, com controle rigoroso de umidade e maturação.</p>
         <p>Fumo peneirado, zero pó. Rendimento médio de 1.200 palheiros por quilo. Uma técnica que respeita o paladar — suavidade na garganta e riqueza de notas que só o trato especializado consegue extrair.</p>
@@ -261,7 +270,7 @@
     <p style="margin-top: 8px;"><a href="mailto:leonardo@33tabaco.com.br">leonardo@33tabaco.com.br</a></p>
 </footer>
 
-<a href="https://wa.me/5517981085993" target="_blank" title="Falar no WhatsApp" style="position:fixed; bottom:25px; right:25px; background:#25D366; color:#fff; width:58px; height:58px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 15px rgba(0,0,0,0.4); z-index:9999; text-decoration:none; transition:0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" onclick="gtag('event','click_whatsapp_flutuante',{event_category:'botao_global',event_label:'home'})">
+<a href="https://wa.me/5517981085993" target="_blank" title="Falar no WhatsApp" class="wa-float" style="position:fixed; bottom:25px; right:25px; background:#25D366; color:#fff; width:58px; height:58px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 15px rgba(0,0,0,0.4); z-index:9999; text-decoration:none; transition:0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" onclick="gtag('event','click_whatsapp_flutuante',{event_category:'botao_global',event_label:'home'})">
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
@@ -330,6 +339,22 @@ function fecharDistribuidor(){
       });
   });
 })();
+</script>
+
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll('.reveal');
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 40;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add('active');
+    }
+  }
+}
+window.addEventListener('scroll', reveal);
+reveal();
 </script>
 </body>
 </html>

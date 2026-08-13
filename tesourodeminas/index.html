@@ -7,9 +7,34 @@
     <meta http-equiv="refresh" content="0; url=https://33tabaco.com.br/tesouromineiro/">
     <meta name="robots" content="noindex, follow">
     <script>location.replace("https://33tabaco.com.br/tesouromineiro/");</script>
-    <style>body{font-family:Georgia,serif;background:#111;color:#e4dccf;text-align:center;padding:60px 20px;}a{color:#d4af37;}</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+        h1, h2, h3, .tagline p, .pop-box, .intro h1, .cta-geral h2, .card-marca h3 { font-family: 'Playfair Display', serif; }
+
+        .wa-float { animation: waPulse 2s infinite; }
+        @keyframes waPulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.7s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+body{font-family:Georgia,serif;background:#111;color:#e4dccf;text-align:center;padding:60px 20px;}a{color:#d4af37;}</style>
 </head>
 <body>
     <p>Esta página mudou de endereço. Redirecionando para <a href="https://33tabaco.com.br/tesouromineiro/">Tesouro Mineiro</a>…</p>
+
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll('.reveal');
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 40;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add('active');
+    }
+  }
+}
+window.addEventListener('scroll', reveal);
+reveal();
+</script>
 </body>
 </html>

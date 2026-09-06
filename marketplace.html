@@ -692,7 +692,7 @@
                 <ul>
                     <li><span class="rotulo">Conteúdo do Pack:</span> <span class="valor-destaque">10 Maços (200 Palheiros)</span></li>
                     <li><span class="rotulo">Palheiros por Maço:</span> <span class="valor-destaque">20 Unidades</span></li>
-                    <li><span class="rotulo">Preço Unitário do Maço:</span> <span class="valor-destaque">R$ 11,20</span></li>
+                    <li><span class="rotulo">Preço Unitário do Maço:</span> <span class="valor-destaque">R$ 12,50</span></li>
                     <li><span class="rotulo">Preço Sugerido de Venda:</span> <span class="valor-destaque">R$ 18,00 a R$ 25,00</span></li>
                 </ul>
             </div>
@@ -701,10 +701,10 @@
                 <div class="preco-wrap">
                     <div>
                         <span style="font-size:0.85em; color:#a89a85; display:block;">Valor do Pack (10 maços):</span>
-                        <span class="preco-principal">R$ 112,00</span>
+                        <span class="preco-principal">R$ 125,00</span>
                     </div>
                     <div class="preco-unitario">
-                        (R$ 11,20 / carteira)
+                        (R$ 12,50 / carteira)
                     </div>
                 </div>
 
@@ -719,7 +719,7 @@
 
                 <div class="resumo-subtotal">
                     <span class="rotulo">Total (<span id="total-palheiros">200</span> palheiros):</span>
-                    <span class="total-dinamico" id="subtotal-dois-irmaos">R$ 112,00</span>
+                    <span class="total-dinamico" id="subtotal-dois-irmaos">R$ 125,00</span>
                 </div>
 
                 <button class="btn-comprar-zap" onclick="comprarWhatsApp('dois-irmaos')">
@@ -734,8 +734,12 @@
     <!-- Card 2: Fumo de Saquinho (Estruturado) -->
     <div class="produto-card card-em-breve" data-categoria="saquinho">
         <span class="badge-destaque badge-em-breve">Em Breve · Lote em Preparo</span>
-        <div class="produto-imagem-wrap">
-            <img src="foto-saquinho-2.jpeg" alt="Fumo de Saquinho 33 Tabaco" onerror="this.src='foto-saquinho-1.jpeg';">
+        <div class="produto-imagem-wrap placeholder-em-breve" style="display:flex; flex-direction:column; align-items:center; justify-content:center; background:radial-gradient(circle at center, #241A12 0%, #0D0A08 75%); border-bottom:1px solid #2B2117; text-align:center; padding:20px;">
+            <div style="width:76px; height:76px; border-radius:50%; background:rgba(212, 175, 55, 0.08); border:1.5px dashed var(--ouro); display:flex; align-items:center; justify-content:center; margin-bottom:16px; box-shadow:0 0 25px rgba(212, 175, 55, 0.1);">
+                <span style="font-size:2.2em; line-height:1;">🌿</span>
+            </div>
+            <span style="color:var(--ouro); font-size:1.35em; font-weight:800; letter-spacing:4px; text-transform:uppercase; font-family:'Playfair Display',serif; text-shadow:0 2px 10px rgba(0,0,0,0.8);">Em Breve</span>
+            <span style="display:block; color:#8C7F70; font-size:0.82em; letter-spacing:1.5px; text-transform:uppercase; margin-top:8px;">Novo Lote em Preparo</span>
         </div>
         <div class="produto-info">
             <span class="produto-subtitulo">Fumo Desfiado para Balcão</span>
@@ -832,7 +836,7 @@
    ========================================================================== */
 const WHATSAPP_VENDAS = '5517981085993'; // <-- Altere aqui quando decidir o novo número!
 
-const PRECO_PACK = 112.00;
+const PRECO_PACK = 125.00;
 let quantidadePacks = 1;
 
 function alterarQtd(produto, delta) {

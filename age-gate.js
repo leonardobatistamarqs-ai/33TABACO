@@ -5,13 +5,13 @@
 
     var style = document.createElement("style");
     style.textContent =
-        "#age-gate-overlay{position:fixed;inset:0;z-index:99999;background:rgba(10,8,6,0.97);" +
+        "#age-gate-overlay{position:fixed;inset:0;z-index:9999999;background:rgba(10,8,6,0.98);" +
         "display:flex;align-items:center;justify-content:center;padding:20px;" +
-        "font-family:'Georgia',serif;}" +
-        "#age-gate-box{max-width:480px;width:100%;background:#150f0a;border:1px solid #d4af37;" +
-        "border-radius:16px;padding:45px 35px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.6);}" +
+        "font-family:'Georgia',serif;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);}" +
+        "#age-gate-box{max-width:480px;width:100%;background:#150f0a;border:2px solid #d4af37;" +
+        "border-radius:16px;padding:45px 35px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.85);}" +
         "#age-gate-box img{width:70px;height:auto;margin-bottom:20px;}" +
-        "#age-gate-box h2{color:#d4af37;font-size:1.3em;letter-spacing:1px;text-transform:uppercase;margin:0 0 18px;}" +
+        "#age-gate-box h2{color:#d4af37;font-size:1.35em;letter-spacing:1px;text-transform:uppercase;margin:0 0 18px;}" +
         "#age-gate-box p{color:#d4d0c8;font-size:1.02em;line-height:1.7;margin:0 0 28px;}" +
         "#age-gate-box .aviso-legal{color:#948a7a;font-size:0.82em;line-height:1.6;margin-top:22px;}" +
         "#age-gate-botoes{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}" +
@@ -27,7 +27,7 @@
     overlay.id = "age-gate-overlay";
     overlay.innerHTML =
         '<div id="age-gate-box">' +
-        '<img src="/logo-aguia.jpeg" alt="33 Tabaco" onerror="this.style.display=\'none\'">' +
+        '<img src="/logo-aguia.jpeg" alt="33 Tabaco" onerror="this.onerror=null; this.src=\'../logo-aguia.jpeg\';">' +
         "<h2>Confirmação de Idade</h2>" +
         "<p>Este site contém informações sobre produtos de tabaco e fumo artesanal. " +
         "O acesso é destinado exclusivamente a <strong style=\"color:#d4af37;\">maiores de 18 anos</strong>.</p>" +
@@ -44,7 +44,10 @@
     document.getElementById("age-gate-sim").addEventListener("click", function () {
         try { sessionStorage.setItem(CHAVE, "1"); } catch (e) {}
         overlay.remove();
-        document.body.style.overflow = "";
+        var pop = document.getElementById("popupDistribuidor");
+        if (!pop || pop.style.display === "none") {
+            document.body.style.overflow = "";
+        }
     });
     document.getElementById("age-gate-nao").addEventListener("click", function () {
         window.location.href = "https://www.gov.br/saude/pt-br";

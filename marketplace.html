@@ -907,7 +907,7 @@
     </div>
     <div class="faq-item">
         <h3>Qual a margem de lucro sugerida para o revendedor?</h3>
-        <p>Com o pack a R$ 112,00, cada carteira de 20 palheiros sai por apenas R$ 11,20. O preço de venda ao consumidor final costuma girar entre R$ 18,00 e R$ 25,00, garantindo uma margem bruta de 60% a mais de 100% por carteira.</p>
+        <p>Com o pack a R$ 125,00, cada carteira de 20 palheiros sai por apenas R$ 12,50. O preço de venda ao consumidor final costuma girar entre R$ 18,00 e R$ 25,00, garantindo uma margem bruta atrativa de 45% a 100% por carteira.</p>
     </div>
     <div class="faq-item">
         <h3>Como é feito o frete e prazo de entrega?</h3>
@@ -925,11 +925,11 @@
 
 <script>
 /* ==========================================================================
-   CONFIGURAÇÃO DE NÚMERO DO WHATSAPP
-   Para direcionar para outro número de WhatsApp, basta alterar o valor abaixo:
-   Exemplo: const WHATSAPP_VENDAS = '5511999999999';
+   CONFIGURAÇÃO DE NÚMEROS DE WHATSAPP POR PRODUTO
+   Você pode direcionar cada produto para um número de WhatsApp diferente:
    ========================================================================== */
-const WHATSAPP_VENDAS = '5517981085993'; // <-- Altere aqui quando decidir o novo número!
+const WHATSAPP_DOIS_IRMAOS   = '5517981085993'; // <-- Número exclusivo para Palheiros Dois Irmãos
+const WHATSAPP_FUMO_SAQUINHO = '5517981085993'; // <-- Número para o Fumo de Saquinho (33 Tabaco)
 
 const PRECO_PACK = 125.00;
 let quantidadePacks = 1;
@@ -970,7 +970,7 @@ Por favor, me informe a cotação do frete e as formas de pagamento para o meu C
             });
         } catch(e){}
 
-        const url = `https://wa.me/${WHATSAPP_VENDAS}?text=${encodeURIComponent(mensagem)}`;
+        const url = `https://wa.me/${WHATSAPP_DOIS_IRMAOS}?text=${encodeURIComponent(mensagem)}`;
         window.open(url, '_blank');
     }
 }
@@ -986,7 +986,7 @@ function consultarSaquinhoWhatsApp() {
         });
     } catch(e){}
 
-    const url = `https://wa.me/${WHATSAPP_VENDAS}?text=${encodeURIComponent(mensagem)}`;
+    const url = `https://wa.me/${WHATSAPP_FUMO_SAQUINHO}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
 }
 

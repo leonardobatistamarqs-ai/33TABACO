@@ -746,6 +746,7 @@
     </a>
     <nav class="nav-links">
         <a href="palheirosdoisirmaos/" class="nav-link">Dois Irmãos</a>
+        <a href="catuai27/" class="nav-link">Catuaí 27</a>
         <a href="distribuidores.html" class="nav-link">Marcas Parceiras</a>
         <a href="index.html" class="nav-link nav-btn-home">← Início</a>
     </nav>
@@ -765,15 +766,15 @@
 <!-- Filtros de Categoria -->
 <div class="filtros-container">
     <button class="btn-filtro ativo" onclick="filtrarCategoria('todos')">Todos os Produtos</button>
-    <button class="btn-filtro" onclick="filtrarCategoria('palheiros')">Palheiros Prontos</button>
-    <button class="btn-filtro" onclick="filtrarCategoria('saquinho')">Fumo de Saquinho</button>
+    <button class="btn-filtro" onclick="filtrarCategoria('dois-irmaos')">Palheiros Dois Irmãos</button>
+    <button class="btn-filtro" onclick="filtrarCategoria('catuai')">Catuaí 27</button>
 </div>
 
 <!-- Vitrine de Produtos -->
 <section class="vitrine">
 
     <!-- Card 1: Palheiros Dois Irmãos -->
-    <div class="produto-card destaque-principal" data-categoria="palheiros">
+    <div class="produto-card destaque-principal" data-categoria="dois-irmaos">
         <span class="badge-destaque">Mais Vendido · Pronta Entrega</span>
         <div class="produto-imagem-wrap">
             <img src="palheirosdoisirmaos/maco-duplo.jpg" alt="Pack Palheiros Dois Irmãos 10 caixas">
@@ -826,45 +827,64 @@
         </div>
     </div>
 
-    <!-- Card 2: Fumo de Saquinho (Estruturado) -->
-    <div class="produto-card card-em-breve" data-categoria="saquinho">
-        <span class="badge-destaque badge-em-breve">Em Breve · Lote em Preparo</span>
-        <div class="produto-imagem-wrap placeholder-em-breve" style="display:flex; flex-direction:column; align-items:center; justify-content:center; background:radial-gradient(circle at center, #241A12 0%, #0D0A08 75%); border-bottom:1px solid #2B2117; text-align:center; padding:20px;">
-            <div style="width:76px; height:76px; border-radius:50%; background:rgba(212, 175, 55, 0.08); border:1.5px dashed var(--ouro); display:flex; align-items:center; justify-content:center; margin-bottom:16px; box-shadow:0 0 25px rgba(212, 175, 55, 0.1);">
-                <span style="font-size:2.2em; line-height:1;">🌿</span>
-            </div>
-            <span style="color:var(--ouro); font-size:1.35em; font-weight:800; letter-spacing:4px; text-transform:uppercase; font-family:'Playfair Display',serif; text-shadow:0 2px 10px rgba(0,0,0,0.8);">Em Breve</span>
-            <span style="display:block; color:#8C7F70; font-size:0.82em; letter-spacing:1.5px; text-transform:uppercase; margin-top:8px;">Novo Lote em Preparo</span>
+    <!-- Card 2: Catuaí 27 Palheiros -->
+    <div class="produto-card destaque-principal" data-categoria="catuai" id="card-catuai">
+        <span class="badge-destaque" style="background:linear-gradient(90deg, #d5b04c, #f3e3ae); color:#0d0b09;">Linha Premium · 100% Artesanal</span>
+        <div class="produto-imagem-wrap" style="background:#0d0b09; display:flex; align-items:center; justify-content:center;">
+            <img src="catuai27/tradicional.png" alt="Display Catuaí 27" id="img-catuai" style="object-fit:contain; max-height:100%; width:auto;">
         </div>
         <div class="produto-info">
-            <span class="produto-subtitulo">Fumo Desfiado para Balcão</span>
-            <h2 class="produto-titulo">Fumo Saquinho 33 Tabaco</h2>
-            <p class="produto-descricao">Fumo desfiado premium em embalagem dosadora individual para exposição em balcão. Blend artesanal peneirado, zero pó e com umidade calibrada. Alta procura em bares e tabacarias.</p>
+            <span class="produto-subtitulo" style="color:#d5b04c;">Palheiro Artesanal Premium</span>
+            <h2 class="produto-titulo">Catuaí 27</h2>
+            <p class="produto-descricao">Display padrão fechado com 10 caixinhas. Fumo nobre com o blend consagrado da 33 Tabaco e queima perfeita. Disponível nos sabores Tradicional, Menta e Love 66 (sabor único por display).</p>
             
             <div class="produto-especificacoes">
                 <ul>
-                    <li><span class="rotulo">Apresentação:</span> <span class="valor-destaque">Fardo com Saquinhos Individuais</span></li>
-                    <li><span class="rotulo">Blend:</span> <span class="valor-destaque">Cordas Mineiras Tratadas</span></li>
-                    <li><span class="rotulo">Padrão:</span> <span class="valor-destaque">Peneirado · Zero Pó</span></li>
-                    <li><span class="rotulo">Status:</span> <span class="valor-destaque" style="color:#d4af37;">Próximo Lote em Breve</span></li>
+                    <li><span class="rotulo">Conteúdo do Display:</span> <span class="valor-destaque">10 Caixinhas (200 Palheiros)</span></li>
+                    <li><span class="rotulo">Palheiros por Caixinha:</span> <span class="valor-destaque">20 Unidades</span></li>
+                    <li><span class="rotulo">Preço Unitário da Caixinha:</span> <span class="valor-destaque">R$ 18,00</span></li>
+                    <li><span class="rotulo">Preço Sugerido de Venda:</span> <span class="valor-destaque">R$ 25,00 a R$ 32,00</span></li>
+                    <li style="align-items:center;">
+                        <span class="rotulo">Sabor do Display:</span>
+                        <select id="sabor-catuai" onchange="mudarSaborCatuai(this.value)" style="background:#1a1510; color:#d5b04c; border:1px solid #d5b04c; border-radius:6px; padding:4px 10px; font-size:0.92em; font-weight:600; cursor:pointer; outline:none;">
+                            <option value="Tradicional">Tradicional</option>
+                            <option value="Menta">Menta</option>
+                            <option value="Love 66">Love 66</option>
+                        </select>
+                    </li>
                 </ul>
             </div>
 
             <div class="bloco-compra">
                 <div class="preco-wrap">
                     <div>
-                        <span style="font-size:0.85em; color:#a89a85; display:block;">Preço no Atacado:</span>
-                        <span class="preco-principal" style="font-size:1.6em; color:#a89a85;">Em Breve</span>
+                        <span style="font-size:0.85em; color:#a89a85; display:block;">Valor do Display (10 caixas):</span>
+                        <span class="preco-principal">R$ 180,00</span>
                     </div>
                     <div class="preco-unitario">
-                        (Cadastre-se para a lista)
+                        (R$ 18,00 / caixinha)
                     </div>
                 </div>
 
-                <button class="btn-avise-me" onclick="consultarSaquinhoWhatsApp()">
-                    <span>💬</span> Consultar Previsão no WhatsApp
+                <div class="controle-qtd-wrap">
+                    <span class="qtd-label">Quantidade de Displays:</span>
+                    <div class="seletor-qtd">
+                        <button class="btn-qtd" onclick="alterarQtdCatuai(-1)">−</button>
+                        <span class="valor-qtd" id="qtd-catuai">1</span>
+                        <button class="btn-qtd" onclick="alterarQtdCatuai(1)">+</button>
+                    </div>
+                </div>
+
+                <div class="resumo-subtotal">
+                    <span class="rotulo">Total (<span id="total-palheiros-catuai">200</span> palheiros):</span>
+                    <span class="total-dinamico" id="subtotal-catuai">R$ 180,00</span>
+                </div>
+
+                <button class="btn-comprar-zap" onclick="comprarWhatsAppCatuai()">
+                    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Fechar Pedido no WhatsApp
                 </button>
-                <p style="text-align:center; font-size:0.78em; color:#8C7F70; margin:10px 0 0;">Garanta prioridade na fila do próximo lote</p>
+                <p style="text-align:center; font-size:0.78em; color:#8C7F70; margin:10px 0 0;">Pedido direto sem burocracia · Envio imediato</p>
             </div>
         </div>
     </div>
@@ -902,12 +922,12 @@
 <section class="duvidas">
     <h2>Dúvidas Frequentes</h2>
     <div class="faq-item">
-        <h3>Qual o pedido mínimo para Palheiros Dois Irmãos?</h3>
-        <p>Trabalhamos a partir de apenas 1 pack (10 carteiras com 20 palheiros cada, totalizando 200 palheiros). Condição ideal para tabacarias, bares e empórios testarem a saída sem travar capital.</p>
+        <h3>Qual o pedido mínimo para Palheiros Dois Irmãos e Catuaí 27?</h3>
+        <p>Trabalhamos a partir de apenas 1 pack ou display (10 carteiras com 20 palheiros cada, totalizando 200 palheiros). Condição ideal para tabacarias, bares e empórios testarem a saída sem travar capital.</p>
     </div>
     <div class="faq-item">
         <h3>Qual a margem de lucro sugerida para o revendedor?</h3>
-        <p>Com o pack a R$ 125,00, cada carteira de 20 palheiros sai por apenas R$ 12,50. O preço de venda ao consumidor final costuma girar entre R$ 18,00 e R$ 25,00, garantindo uma margem bruta atrativa de 45% a 100% por carteira.</p>
+        <p>Para o Dois Irmãos (pack a R$ 125,00), cada carteira sai por R$ 12,50 com venda sugerida de R$ 18,00 a R$ 25,00. Para o Catuaí 27 (display a R$ 180,00), cada carteira sai por R$ 18,00 com venda sugerida de R$ 25,00 a R$ 32,00, garantindo excelentes margens de giro rápido.</p>
     </div>
     <div class="faq-item">
         <h3>Como é feito o frete e prazo de entrega?</h3>
@@ -926,11 +946,11 @@
 <script>
 /* ==========================================================================
    CONFIGURAÇÃO DE NÚMEROS DE WHATSAPP POR PRODUTO
-   Você pode direcionar cada produto para um número de WhatsApp diferente:
    ========================================================================== */
-const WHATSAPP_DOIS_IRMAOS   = '5519995932344'; // <-- Número exclusivo para Palheiros Dois Irmãos
-const WHATSAPP_FUMO_SAQUINHO = '5517981085993'; // <-- Número para o Fumo de Saquinho (33 Tabaco)
+const WHATSAPP_DOIS_IRMAOS = '5519995932344'; // <-- Palheiros Dois Irmãos
+const WHATSAPP_CATUAI      = '554391782990';  // <-- Catuaí 27 (DDD 43)
 
+/* --- Dois Irmãos --- */
 const PRECO_PACK = 125.00;
 let quantidadePacks = 1;
 
@@ -975,18 +995,60 @@ Por favor, me informe a cotação do frete e as formas de pagamento para o meu C
     }
 }
 
-function consultarSaquinhoWhatsApp() {
+/* --- Catuaí 27 --- */
+const PRECO_DISPLAY_CATUAI = 180.00;
+let quantidadeDisplaysCatuai = 1;
+let saborSelecionadoCatuai = 'Tradicional';
+
+const imagensCatuai = {
+    'Tradicional': 'catuai27/tradicional.png',
+    'Menta': 'catuai27/menta.png',
+    'Love 66': 'catuai27/love66.png'
+};
+
+function mudarSaborCatuai(sabor) {
+    saborSelecionadoCatuai = sabor;
+    const imgEl = document.getElementById('img-catuai');
+    if (imgEl && imagensCatuai[sabor]) {
+        imgEl.src = imagensCatuai[sabor];
+    }
+}
+
+function alterarQtdCatuai(delta) {
+    quantidadeDisplaysCatuai = Math.max(1, quantidadeDisplaysCatuai + delta);
+    document.getElementById('qtd-catuai').innerText = quantidadeDisplaysCatuai;
+    
+    const totalDinheiro = (quantidadeDisplaysCatuai * PRECO_DISPLAY_CATUAI).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const totalPalheiros = (quantidadeDisplaysCatuai * 200).toLocaleString('pt-BR');
+    
+    document.getElementById('subtotal-catuai').innerText = 'R$ ' + totalDinheiro;
+    document.getElementById('total-palheiros-catuai').innerText = totalPalheiros;
+}
+
+function comprarWhatsAppCatuai() {
+    const totalDinheiro = (quantidadeDisplaysCatuai * PRECO_DISPLAY_CATUAI).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const totalPalheiros = (quantidadeDisplaysCatuai * 200).toLocaleString('pt-BR');
+    const totalCaixas = quantidadeDisplaysCatuai * 10;
+    
     const mensagem = 
-`Olá! Vi o *Fumo de Saquinho 33 Tabaco* no Marketplace e gostaria de saber a previsão de chegada do próximo lote e os valores para atacado.`;
+`Olá! Gostaria de fazer um pedido pelo Marketplace da 33 Tabaco:
+
+📦 *Produto:* Catuaí 27 Palheiros Premium
+🍃 *Sabor do Display:* ${saborSelecionadoCatuai} (Display padrão fechado)
+📦 *Apresentação:* ${quantidadeDisplaysCatuai} display(s) (${totalCaixas} caixinhas / ${totalPalheiros} palheiros)
+💰 *Valor Total:* R$ ${totalDinheiro}
+
+Por favor, me informe a cotação do frete e as formas de pagamento para o meu CEP.`;
 
     try {
-        gtag('event', 'click_marketplace_avise_me', {
+        gtag('event', 'click_marketplace_pedido', {
             event_category: 'marketplace',
-            event_label: 'fumo_saquinho'
+            event_label: 'catuai27',
+            value: quantidadeDisplaysCatuai * PRECO_DISPLAY_CATUAI
         });
     } catch(e){}
 
-    const url = `https://wa.me/${WHATSAPP_FUMO_SAQUINHO}?text=${encodeURIComponent(mensagem)}`;
+    const url = `https://wa.me/${WHATSAPP_CATUAI}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
 }
 

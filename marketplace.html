@@ -832,6 +832,42 @@
             text-align: center;
         }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Display Palheiros Tesouro Mineiro Premium (10 Caixinhas / 200 Palheiros)",
+      "description": "Display padrão fechado com 10 caixinhas dos Palheiros Tesouro Mineiro Premium. Feito artesanalmente com fumo nobre e palha creme macia selecionada.",
+      "image": "https://33tabaco.com.br/tesouromineiro/caixa-costas.webp",
+      "sku": "TM-PREMIUM-10",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tesouro Mineiro"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "18",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://33tabaco.com.br/marketplace.html",
+        "priceCurrency": "BRL",
+        "price": "135.00",
+        "priceValidUntil": "2027-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "LocalBusiness",
+          "name": "33 Tabaco",
+          "telephone": "+5517981085993"
+        }
+      }
+    }
+    </script>
+
 </head>
 <body>
 <script src="/age-gate.js"></script>
@@ -863,8 +899,9 @@
 <div class="filtros-container">
     <button class="btn-filtro ativo" onclick="filtrarCategoria('todos')">Todos os Produtos</button>
     <button class="btn-filtro" onclick="filtrarCategoria('dois-irmaos')">Palheiros Dois Irmãos</button>
-    <button class="btn-filtro" onclick="filtrarCategoria('fumo-desfiado')">Fumos Desfiados</button>
+    <button class="btn-filtro" onclick="filtrarCategoria('tesouro-mineiro')">Tesouro Mineiro</button>
     <button class="btn-filtro" onclick="filtrarCategoria('catuai')">Catuaí 27</button>
+    <button class="btn-filtro" onclick="filtrarCategoria('fumo-desfiado')">Fumos Desfiados</button>
 </div>
 
 <!-- Vitrine de Produtos -->
@@ -931,52 +968,53 @@
         </div>
     </div>
 
-    <!-- Card 2: Fumo de Saquinho D'Corda -->
-    <div class="produto-card destaque-principal" data-categoria="fumo-desfiado">
-        <span class="badge-destaque" style="background:var(--ouro); color:#120D08;">Novidade</span>
-        <div class="produto-imagem-wrap">
-            <img src="fumo-desfiado/display.jpg?v=2" alt="Fardo Fumo D'Corda">
+    <!-- Card 2: Tesouro Mineiro Palheiros -->
+    <div class="produto-card destaque-principal" data-categoria="tesouro-mineiro" id="card-tesouro">
+        <span class="badge-destaque" style="background:linear-gradient(90deg, #d4af37, #f4e2a9); color:#120d08;">Linha Premium · 100% Artesanal</span>
+        <div class="produto-imagem-wrap" style="background:#2b1214; display:flex; align-items:center; justify-content:center; padding:15px;">
+            <img src="tesouromineiro/caixa-costas.webp" alt="Tesouro Mineiro Premium" id="img-tesouro" style="object-fit:contain; max-height:100%; width:auto; border-radius:8px; filter:drop-shadow(0 10px 20px rgba(0,0,0,0.8));">
         </div>
         <div class="produto-info">
-            <span class="produto-subtitulo">Fumo Desfiado</span>
-            <h2 class="produto-titulo">Fumo D'Corda</h2>
-            <p class="produto-descricao">Fumo de saquinho de alta qualidade, acondicionado em embalagem hermética de alumínio com fechamento ziplock, garantindo frescor e aroma 100% preservados. Fardo fechado para revenda com giro rápido e excelente aceitação comercial.</p>
+            <span class="produto-subtitulo" style="color:#d4af37;">Palheiro Artesanal Nobre</span>
+            <h2 class="produto-titulo">Tesouro Mineiro</h2>
+            <p class="produto-descricao">Display padrão fechado com 10 caixinhas. Palheiro artesanal de altíssimo padrão, feito com fumo nobre selecionado e palha de milho creme macia de queima impecável. Linha Premium com assinatura de sofisticação e alta procura no balcão.</p>
             
             <div class="produto-especificacoes">
                 <ul>
-                    <li><span class="rotulo">Conteúdo do Fardo:</span> <span class="valor-destaque">10 Unidades</span></li>
-                    <li><span class="rotulo">Peso por Unidade:</span> <span class="valor-destaque">30g</span></li>
-                    <li><span class="rotulo">Preço Unitário:</span> <span class="valor-destaque">R$ 3,50</span></li>
-                    <li><span class="rotulo">Preço Sugerido de Venda:</span> <span class="valor-destaque">R$ 6,00 a R$ 8,00</span></li>
+                    <li><span class="rotulo">Conteúdo do Display:</span> <span class="valor-destaque">10 Caixinhas (200 Palheiros)</span></li>
+                    <li><span class="rotulo">Palheiros por Caixinha:</span> <span class="valor-destaque">20 Unidades</span></li>
+                    <li><span class="rotulo">Preço Unitário da Caixinha:</span> <span class="valor-destaque">R$ 13,50</span></li>
+                    <li><span class="rotulo">Preço Sugerido de Venda:</span> <span class="valor-destaque">R$ 20,00 a R$ 26,00</span></li>
+                    <li><span class="rotulo">Linha Exclusiva:</span> <span class="valor-destaque" style="color:#f4e2a9;">Premium</span></li>
                 </ul>
             </div>
 
             <div class="bloco-compra">
                 <div class="preco-wrap">
                     <div>
-                        <span style="font-size:0.85em; color:#a89a85; display:block;">Valor do Fardo (10 un):</span>
-                        <span class="preco-principal">R$ 35,00</span>
+                        <span style="font-size:0.85em; color:#a89a85; display:block;">Valor do Display (10 caixas):</span>
+                        <span class="preco-principal">R$ 135,00</span>
                     </div>
                     <div class="preco-unitario">
-                        (R$ 3,50 / unidade)
+                        (R$ 13,50 / caixinha)
                     </div>
                 </div>
 
                 <div class="controle-qtd-wrap">
-                    <span class="qtd-label">Quantidade de Fardos:</span>
+                    <span class="qtd-label">Quantidade de Displays:</span>
                     <div class="seletor-qtd">
-                        <button class="btn-qtd" onclick="alterarQtdFumo(-1)">−</button>
-                        <span class="valor-qtd" id="qtd-fumo">1</span>
-                        <button class="btn-qtd" onclick="alterarQtdFumo(1)">+</button>
+                        <button class="btn-qtd" onclick="alterarQtdTesouro(-1)">−</button>
+                        <span class="valor-qtd" id="qtd-tesouro">1</span>
+                        <button class="btn-qtd" onclick="alterarQtdTesouro(1)">+</button>
                     </div>
                 </div>
 
                 <div class="resumo-subtotal">
-                    <span class="rotulo">Total (<span id="total-unidades-fumo">10</span> unidades):</span>
-                    <span class="total-dinamico" id="subtotal-fumo">R$ 35,00</span>
+                    <span class="rotulo">Total (<span id="total-palheiros-tesouro">200</span> palheiros):</span>
+                    <span class="total-dinamico" id="subtotal-tesouro">R$ 135,00</span>
                 </div>
 
-                <button class="btn-comprar-zap" onclick="comprarWhatsAppFumo()">
+                <button class="btn-comprar-zap" onclick="comprarWhatsAppTesouro()">
                     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     Fechar Pedido no WhatsApp
                 </button>
@@ -1039,6 +1077,61 @@
                 </div>
 
                 <button class="btn-comprar-zap" onclick="comprarWhatsAppCatuai()">
+                    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Fechar Pedido no WhatsApp
+                </button>
+                <p style="text-align:center; font-size:0.78em; color:#8C7F70; margin:10px 0 0;">Pedido direto sem burocracia · Envio imediato</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card 4: Fumo de Saquinho D'Corda -->
+    <div class="produto-card destaque-principal" data-categoria="fumo-desfiado">
+        <span class="badge-destaque" style="background:var(--ouro); color:#120D08;">Novidade</span>
+        <div class="produto-imagem-wrap">
+            <img src="fumo-desfiado/display.jpg?v=2" alt="Fardo Fumo D'Corda">
+        </div>
+        <div class="produto-info">
+            <span class="produto-subtitulo">Fumo Desfiado</span>
+            <h2 class="produto-titulo">Fumo D'Corda</h2>
+            <p class="produto-descricao">Fumo de saquinho de alta qualidade, acondicionado em embalagem hermética de alumínio com fechamento ziplock, garantindo frescor e aroma 100% preservados. Fardo fechado para revenda com giro rápido e excelente aceitação comercial.</p>
+            
+            <div class="produto-especificacoes">
+                <ul>
+                    <li><span class="rotulo">Conteúdo do Fardo:</span> <span class="valor-destaque">10 Unidades</span></li>
+                    <li><span class="rotulo">Peso por Unidade:</span> <span class="valor-destaque">30g</span></li>
+                    <li><span class="rotulo">Preço Unitário:</span> <span class="valor-destaque">R$ 3,50</span></li>
+                    <li><span class="rotulo">Preço Sugerido de Venda:</span> <span class="valor-destaque">R$ 6,00 a R$ 8,00</span></li>
+                </ul>
+            </div>
+
+            <div class="bloco-compra">
+                <div class="preco-wrap">
+                    <div>
+                        <span style="font-size:0.85em; color:#a89a85; display:block;">Valor do Fardo (10 un):</span>
+                        <span class="preco-principal">R$ 35,00</span>
+                    </div>
+                    <div class="preco-unitario">
+                        (R$ 3,50 / unidade)
+                    </div>
+                </div>
+
+                <div class="controle-qtd-wrap">
+                    <span class="qtd-label">Quantidade de Fardos:</span>
+                    <div class="seletor-qtd">
+                        <button class="btn-qtd" onclick="alterarQtdFumo(-1)">−</button>
+                        <span class="valor-qtd" id="qtd-fumo">1</span>
+                        <button class="btn-qtd" onclick="alterarQtdFumo(1)">+</button>
+                    </div>
+                </div>
+
+                <div class="resumo-subtotal">
+                    <span class="rotulo">Total (<span id="total-unidades-fumo">10</span> unidades):</span>
+                    <span class="total-dinamico" id="subtotal-fumo">R$ 35,00</span>
+                </div>
+
+                <button class="btn-comprar-zap" onclick="comprarWhatsAppFumo()">
                     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     Fechar Pedido no WhatsApp
                 </button>
@@ -1254,6 +1347,50 @@ Por favor, me informe a cotação do frete e as formas de pagamento para o meu C
     } catch(e){}
 
     const url = `https://wa.me/${WHATSAPP_CATUAI}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+}
+
+
+/* --- Tesouro Mineiro --- */
+const WHATSAPP_TESOURO = '5517981085993'; // <-- Tesouro Mineiro (Atendimento 33 Tabaco)
+const PRECO_DISPLAY_TESOURO = 135.00;
+let quantidadeDisplaysTesouro = 1;
+
+function alterarQtdTesouro(delta) {
+    quantidadeDisplaysTesouro = Math.max(1, quantidadeDisplaysTesouro + delta);
+    document.getElementById('qtd-tesouro').innerText = quantidadeDisplaysTesouro;
+    
+    const totalDinheiro = (quantidadeDisplaysTesouro * PRECO_DISPLAY_TESOURO).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const totalPalheiros = (quantidadeDisplaysTesouro * 200).toLocaleString('pt-BR');
+    
+    document.getElementById('subtotal-tesouro').innerText = 'R$ ' + totalDinheiro;
+    document.getElementById('total-palheiros-tesouro').innerText = totalPalheiros;
+}
+
+function comprarWhatsAppTesouro() {
+    const totalDinheiro = (quantidadeDisplaysTesouro * PRECO_DISPLAY_TESOURO).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const totalPalheiros = (quantidadeDisplaysTesouro * 200).toLocaleString('pt-BR');
+    const totalCaixas = quantidadeDisplaysTesouro * 10;
+    
+    const mensagem = 
+`Olá! Gostaria de fazer um pedido pelo Marketplace da 33 Tabaco:
+
+📦 *Produto:* Palheiros Tesouro Mineiro
+👑 *Linha:* Premium
+📦 *Apresentação:* ${quantidadeDisplaysTesouro} display(s) (${totalCaixas} caixinhas / ${totalPalheiros} palheiros)
+💰 *Valor Total:* R$ ${totalDinheiro}
+
+Por favor, me informe a cotação do frete e as formas de pagamento para o meu CEP.`;
+
+    try {
+        gtag('event', 'click_marketplace_pedido', {
+            event_category: 'marketplace',
+            event_label: 'tesouro_mineiro',
+            value: quantidadeDisplaysTesouro * PRECO_DISPLAY_TESOURO
+        });
+    } catch(e){}
+
+    const url = `https://wa.me/${WHATSAPP_TESOURO}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
 }
 
